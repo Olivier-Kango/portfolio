@@ -1,0 +1,69 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Portfolio Mobile version
+
+> My portfolio project is prepared for different screen sizes. However, I built it by using "mobile first" approach. 
+  I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10.).
+
+
+## Built With
+
+- Library : Font Awesome
+- Technologies : Html & CSS
+
+## Live Demo
+
+[My Portfolio Project](https://olivier-kango.netlify.app/)
+
+
+## Getting Started
+
+
+
+
+### Prerequisites
+
+To run this app on your local computer you need the browser (Google Chrome is the best)
+
+### Setup
+
+- Clone the repository on your local machine
+- Cd into the folder
+
+### Install
+
+- Install VSCode or any code editor you like
+- Install npm by running npm install
+
+### Screenshort
+
+![portfolio](https://user-images.githubusercontent.com/108806646/185592907-292a1e5b-2a6f-4348-8e99-253096f5c65a.png)
+
+
+## Author
+
+👤 **Oliver Kango**
+
+- GitHub: [@githubolivier](https://github.com/Olivier-Kango)
+- Twitter: [@twitterolivier](https://twitter.com/olivierkango1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
