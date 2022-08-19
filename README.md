@@ -1,40 +1,69 @@
-Description
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Your portfolio is one of the most powerful tools in my software developer toolbox; it’s the easiest way of showing what I am truly capable of as a developer...
+# Portfolio Mobile version
 
-
-Projects list
-
-Here is the list of projects that will guide me:
-Project 1: Setup and mobile version skeleton
-Project 2: Mobile version
-Project 3: Contact form (pair programming)
-Project 4: Desktop version
-Project 5: Application deploy
-Project 6: Evaluate accessibility (pair programming)
-Project 7: Mobile menu (pair programming)
-Project 8: Details modal (pair programming)
-Project 9: Validate contact form (pair programming)
-Project 10: Preserve data in the browser (pair programming)
+> My portfolio project is prepared for different screen sizes. However, I built it by using "mobile first" approach. 
+  I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10.).
 
 
-Mobile first approach
+## Built With
 
-My portfolio is prepared for different screen sizes. However, I built my portfolio by using "mobile first" approach. 
+- Library : Font Awesome
+- Technologies : Html & CSS
 
-Project requirements
+## Live Demo
 
-For this first project, I used the HTML & CSS linter.
-The 2 sections I built for this project are:
-  - the toolbar (or header):
-  - the headline section (right after the header):
-I chosed the Laura Jong's template: https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10.
+[My Portfolio Project](https://olivier-kango.netlify.app/)
 
-In order to lay out the elements on the page I used Flexbox in all 2 sections.
-I didn't use JavaScript, only html & css.
 
-I was stuck to the design as much as possible (e.g. font, colors, images, text, margins) using the templates in Figma.
+## Getting Started
 
-I implemented the button interactions (enable, hover, etc.).
 
-NB: In this project 1 I worked individually
+
+
+### Prerequisites
+
+To run this app on your local computer you need the browser (Google Chrome is the best)
+
+### Setup
+
+- Clone the repository on your local machine
+- Cd into the folder
+
+### Install
+
+- Install VSCode or any code editor you like
+- Install npm by running npm install
+
+### Screenshort
+
+![portfolio](https://user-images.githubusercontent.com/108806646/185592907-292a1e5b-2a6f-4348-8e99-253096f5c65a.png)
+
+
+## Author
+
+👤 **Oliver Kango**
+
+- GitHub: [@githubolivier](https://github.com/Olivier-Kango)
+- Twitter: [@twitterolivier](https://twitter.com/olivierkango1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.

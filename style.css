@@ -127,7 +127,16 @@ footer h2 {
   top: 0;
 }
 
-.main-text h3 {
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+.main-text p {
   color: white;
   font-style: normal;
   font-weight: 400;
@@ -256,15 +265,6 @@ a:hover {
   margin-right: 10px;
   margin-top: 20px;
   font-size: 25px;
-}
-
-footer p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #f5f5ff;
 }
 
 .work p {
