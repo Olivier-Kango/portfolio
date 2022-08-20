@@ -384,3 +384,11 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
+#bottom {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
