@@ -12,15 +12,24 @@
   <body>
     <div class="container">
       <header>
-        <div class="header_name">
-          <h2 id="top">Olivier</h2>
-          <i class="fa fa-bars"></i>
-        </div>
-        <h1>Olivier Kango</h1>
-        <h2>software developer</h2>
+        <nav class="header_name">
+          <ul>
+            <li> <a href="https://www.facebook.com/olivierhjhjo.7/" class="top"><h2 id="top" >Olivier</h2></a></li>
+            <li>
+              <div class="container_menu"    onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        
       </header>
     
-      <section>
+      <section class="section-top">
+        <h1>Olivier Kango</h1>
+        <h2>software developer</h2>
         <div class="elipse_top_left"></div>
         <article class="main-text">
           <p>
@@ -146,6 +155,59 @@
           </div>
         </article>
       </section>
+      <footer>
+        <h2>
+          CONTACT US
+        </h2>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <br>
+          <input type="text" name="text" id="text-input" placeholder="Text input">
+          <br>
+          <br>
+          <input type="email" name="email" id="email" placeholder="olivierkango@gmail.com" required>
+          <br>
+          <br>
+          <textarea name="textarea" id="text-area" cols="30" rows="10" placeholder="Enter your text here !!!"></textarea>
+        <br>
+        <br>
+        <div class="see-project" id="see-footer">
+          <p>See Project</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="div-footer">
+        </div>
+        <br>
+        <div class="social-icone" id="social">
+          <nav class="flex-nav">
+            <ul>
+              <li class="social">
+                <a href="https://github.com/Olivier-Kango"><i class="fa fa-github"></i></a>
+              </li>
+              <li class="social">
+                <a href="https://www.linkedin.com/in/olivier-kango-b990601b8/"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li class="social">
+                <a href="https://www.facebook.com/olivierhjhjo.7/"><i class="fa fa-hand-peace-o"></i></a>
+              </li>
+              <li class="social">
+                <a href="https://twitter.com/olivierkango1"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="social">
+                <a href="mailto:olivierkango@gmail.com" id="m"><strong>M</strong></a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
 </html>
