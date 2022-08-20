@@ -1,11 +1,8 @@
 body {
   background:#191765;
-  /* width: 100%;
-  overflow: hidden; */
   padding: 0;
   margin: 0;
   width: 100%;
-  /* padding: 0px 35px 30px 35px; */
   display: flex;
   justify-content: center;
   font-family: 'Roboto'
@@ -126,7 +123,7 @@ header .header_name {
   top: 0;
 }
 
-.main-text p {
+.main-text h3 {
   color: white;
   font-style: normal;
   font-weight: 400;
@@ -229,7 +226,7 @@ a:hover {
   flex: 1;
 }
 
-#m {
+.medium {
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -380,8 +377,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 24px;
 line-height: 32px;
-/* or 133% */
-
 display: flex;
 align-items: center;
 }
