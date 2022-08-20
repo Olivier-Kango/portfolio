@@ -58,14 +58,12 @@ header h2 {
   filter: blur(50px);
 }
 
+
 .header_name .fa-bars {
   color: white;
   display: inline-block;
   font-size: 33.33px;
-  top: 29.17%;
-  /* top: 0;
-  right: 0; */
-  
+  top: 0;
 }
 
 .main-text p {
@@ -114,6 +112,7 @@ header h2 {
 
 .frame46 article {
   flex: 1;
+  justify-content: flex-start;
 } 
 
 .frame46 article ul li {
@@ -161,4 +160,97 @@ a:hover {
   flex: 1;
 }
 
+#m {
+  font-family: 'Times New Roman', Times, serif;
+}
 
+.work {
+ text-align: center;
+ padding-top: 30px;
+ padding-bottom: 80px;
+}
+
+.recent-work h1 {
+  color: #9490FF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0 0 40px 0;
+  margin: 0;
+  border-bottom: 2px solid #646369;
+}
+
+.div-one {
+  background: white;
+  height: 40vh;
+  width: 100%;
+  margin: 55px 0 20px 0;
+}
+
+.second h2 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 55px 0;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.second p {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.p2 ul {
+  display: flex;
+  align-content: space-between;
+  padding: 0;
+}
+
+.p2 ul li {
+  flex: 1;
+  width: 104.52px;
+  height: 15.48px;
+  font-family: 'Roboto';
+  font-size: 17px;
+  list-style: none;
+  color: #F5F5FF; 
+  text-align: center;
+  padding: 15px;
+}
+
+.rect {
+  border-left: 1px solid #555555;
+}
+
+.elipse-3 {
+  position: absolute;
+  width: 39.61px;
+  height: 482.57px;
+  top: 1424.71px;
+  background: #EDECFF;
+  filter: blur(35px);
+  transform: rotate(-36.38deg);
+}
+
+.see-project p {
+  text-align: center;
+  width:fit-content;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #F5F5FF; 
+  text-align: center;
+  background: #7D73FC;
+  padding: 12px;
+  margin: 15px;
+  margin-bottom: 12px;
+}
