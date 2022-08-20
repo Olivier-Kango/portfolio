@@ -1,11 +1,19 @@
+html,
 body {
-  background:#191765;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #191765;
   padding: 0;
   margin: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-family: 'Roboto'
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -14,7 +22,6 @@ header {
 
 .container {
   width: 80%;
-  padding-top: 0;
   padding-bottom: 35px;
 }
 
@@ -23,7 +30,9 @@ header {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #fff;
@@ -36,34 +45,27 @@ header {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 { opacity: 0; }
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
-
 header .header_name {
+  background: #191765;
   width: 80%;
   position: fixed;
   padding: 20px 20px 20px 0;
   margin: 0;
-  
 }
 
 .header_name ul {
   width: 100%;
   margin: 0;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding-left: 0;
- 
-}
-
-.header_name {
-  background:#191765;
 }
 
 .header_name ul li {
@@ -74,6 +76,14 @@ header .header_name {
   padding: 0;
 }
 
+footer h2 {
+  margin-top: 150px;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: #9390ff;
+}
+
 .header_name h2 {
   margin: 0;
   padding: 0;
@@ -82,12 +92,11 @@ header .header_name {
 }
 
 .section-top h1 {
-  font-family: 'Roboto';
   font-size: 48px;
   line-height: 72px;
   font-weight: 700;
   letter-spacing: 0.37px;
-  color: #7D73FC;
+  color: #7d73fc;
   text-align: center;
   margin-top: 35%;
 }
@@ -101,20 +110,15 @@ header .header_name {
   text-transform: capitalize;
 }
 
-.section-top h2 {
- color: white;
-}
-
 .elipse_top_left {
   position: absolute;
   width: 160px;
   height: 160px;
   left: -120px;
   top: 150px;
-  background: #EDECFF;
+  background: #edecff;
   filter: blur(50px);
 }
-
 
 .header_name .fa-bars {
   color: white;
@@ -138,7 +142,7 @@ header .header_name {
 .title-lang {
   width: 107px;
   height: 16px;
-  font-family: 'Roboto';
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -146,17 +150,28 @@ header .header_name {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #9490FF;
+  color: #9490ff;
 }
 
 .list {
   width: 104.52px;
   height: 15.48px;
-  font-family: 'Roboto';
+  margin-bottom: 12px;
   font-size: 15px;
   list-style: none;
   align-items: center;
-  color: #F5F5FF;
+  color: #f5f5ff;
+}
+
+.p2 ul li {
+  flex: 1;
+  width: 104.52px;
+  height: 15.48px;
+  font-size: 17px;
+  list-style: none;
+  color: #f5f5ff;
+  text-align: center;
+  padding: 15px;
 }
 
 .frame46 {
@@ -170,11 +185,11 @@ header .header_name {
 .frame46 article {
   flex: 1;
   justify-content: flex-start;
-} 
+}
 
 .frame46 article ul li {
   margin: 20px 0;
-} 
+}
 
 .elipse_right {
   position: absolute;
@@ -182,7 +197,7 @@ header .header_name {
   height: 68px;
   right: 0;
   top: 610px;
-  background: #EDECFF;
+  background: #edecff;
   filter: blur(50px);
 }
 
@@ -198,16 +213,15 @@ a {
 }
 
 a:hover {
-  color:  #0d99ff;
+  color: #0d99ff;
 }
 
 .top:hover {
   color: #0d99ff;
 }
 
-
 #top:hover {
-  color:  #0d99ff;
+  color: #0d99ff;
 }
 
 .social-icone {
@@ -215,7 +229,7 @@ a:hover {
   padding: 40px;
 }
 
-.flex-nav ul { 
+.flex-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -231,14 +245,38 @@ a:hover {
 }
 
 .work {
- text-align: center;
- padding-top: 30px;
- padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+#arrow-down {
+  margin-right: 10px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+.work p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #a2a3ae;
 }
 
 .recent-work h1 {
-  color: #9490FF;
-  font-family: 'Roboto';
+  color: #9490ff;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -256,13 +294,12 @@ a:hover {
 }
 
 .second h2 {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   padding: 55px 0;
   margin: 0;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .second p {
@@ -282,20 +319,8 @@ a:hover {
   padding: 0;
 }
 
-.p2 ul li {
-  flex: 1;
-  width: 104.52px;
-  height: 15.48px;
-  font-family: 'Roboto';
-  font-size: 17px;
-  list-style: none;
-  color: #F5F5FF; 
-  text-align: center;
-  padding: 15px;
-}
-
 .rect {
-  border-left: 1px solid #555555;
+  border-left: 1px solid #555;
 }
 
 .elipse-3 {
@@ -303,49 +328,28 @@ a:hover {
   width: 39.61px;
   height: 482.57px;
   top: 1424.71px;
-  background: #EDECFF;
+  background: #edecff;
   filter: blur(35px);
   transform: rotate(-36.38deg);
 }
 
 .see-project p {
   text-align: center;
-  width:fit-content;
-  font-family: 'Roboto';
+  width: fit-content;
   font-size: 15px;
-  color: #F5F5FF; 
-  text-align: center;
-  background: #7D73FC;
+  color: #f5f5ff;
+  background: #7d73fc;
   padding: 12px;
   margin: 15px;
   margin-bottom: 12px;
 }
 
-
-footer h2 {
-  margin-top: 150px;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 32px;
-  text-align: center;
-  color: #9390FF;
-}
-
-footer p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #F5F5FF;
-}
-
-#text-area, #text-input, #email {
+#text-area,
+#text-input,
+#email {
   width: 95%;
   padding: 10px;
-  font-family: 'Roboto'; 
-  font-size:16px;
+  font-size: 16px;
   display: block;
   margin: 0;
 }
@@ -355,28 +359,28 @@ footer p {
   justify-content: center;
 }
 
+#m {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .div-footer {
-  border: 1px solid #3A3837;
-  
+  border: 1px solid #3a3837;
 }
 
 #social {
   padding: 0;
-
 }
 
 .menu-section {
   position: absolute;
-height: 24px;
-left: 0px;
-right: 68px;
-top: calc(50% - 24px/2);
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 32px;
-display: flex;
-align-items: center;
+  height: 24px;
+  left: 0;
+  right: 68px;
+  top: calc(50% - 24px / 2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
 }
