@@ -58,7 +58,6 @@ header .header_name {
   position: fixed;
   padding: 20px 20px 20px 0;
   margin: 0 -2px;
-
 }
 
 .header_name ul {
@@ -228,6 +227,48 @@ a:hover,
   color: #0d99ff;
 }
 
+.work p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #a2a3ae;
+}
+
+.second p {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.see-project p,
+#see-footer {
+  text-align: center;
+  width: fit-content;
+  font-size: 15px;
+  color: #f5f5ff;
+  background: #7d73fc;
+  padding: 12px;
+  margin: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  background-image: linear-gradient(#9690fe 0, #6358fd 100%);
+  transition: all 0.3s;
+}
+
+#see-footer {
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  touch-action: manipulation;
+}
+
 .see-project p:hover,
 #see-footer:hover {
   background: #5046d6;
@@ -267,14 +308,6 @@ a:hover,
   font-size: 25px;
 }
 
-.work p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
-  color: #a2a3ae;
-}
-
 .recent-work h1 {
   color: #9490ff;
   font-style: normal;
@@ -302,17 +335,6 @@ a:hover,
   color: #fff;
 }
 
-.second p {
-  color: white;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: left;
-  margin-top: 10px;
-  padding-bottom: 30px;
-}
-
 .p2 ul {
   display: flex;
   align-content: space-between;
@@ -333,21 +355,6 @@ a:hover,
   transform: rotate(-36.38deg);
 }
 
-.see-project p, 
-#see-footer {
-  text-align: center;
-  width: fit-content;
-  font-size: 15px;
-  color: #f5f5ff;
-  background: #7d73fc;
-  padding: 12px;
-  margin: 15px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  background-image: linear-gradient(#9690fe 0, #6358fd 100%);
-  transition: all .3s;
-}
-
 #text-area,
 #text-input,
 #email {
@@ -356,14 +363,6 @@ a:hover,
   font-size: 16px;
   display: block;
   margin: 0;
-}
-
-#see-footer {
-  display: flex;
-  border: none;
-  border-radius: 5px;
-  margin: 0 auto;
-  touch-action: manipulation;
 }
 
 #m {
@@ -403,5 +402,4 @@ input[type="email"]:valid,
 textarea:valid {
   border: 1px solid rgba(0, 0, 255, 0.45);
   background-image: linear-gradient(to top, rgba(0, 0, 255, 0.176), rgba(0, 0, 255, 0.046));
-  border: 1px solid green;
 }

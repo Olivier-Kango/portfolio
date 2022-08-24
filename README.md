@@ -2,8 +2,12 @@
 
 # Portfolio Mobile version
 
-> My portfolio project is prepared for different screen sizes. However, I built it by using "mobile first" approach. 
-  I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10.).
+My portfolio project is prepared for different screen sizes. However, I built it by using "mobile first" approach. 
+
+> In this particular branch "contactme", I added the form "Contact Me"
+
+I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10.).
+
 
 
 ## Built With
@@ -13,7 +17,7 @@
 
 ## Live Demo
 
-[My Portfolio Project](https://olivier-kango.netlify.app/)
+[My Portfolio with Contact-me](https://olivier-kango.netlify.app/)
 
 
 ## Getting Started
