@@ -157,22 +157,23 @@
       </section>
       <footer>
         <h2>
-          CONTACT US
+          CONTACT ME
         </h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <br />
-          <input type="text" name="text" id="text-input" placeholder="Text input">
+        <form action="https://formspree.io/f/xrgdbpve" method="post">
+          <input type="text" name="Names" id="text-input" placeholder="Olivier Kango" required maxlength="30">
           <br />
           <br />
-          <input type="email" name="email" id="email" placeholder="olivierkango@gmail.com" required>
+          <input type="email" name="E-mail" id="email" placeholder="olivierkango@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
           <br />
           <br />
-          <textarea name="textarea" id="text-area" cols="30" rows="10" placeholder="Enter your text here !!!"></textarea>
-        <br />
-        <br />
-        <div class="see-project" id="see-footer">
-          <p>See Project</p>
-        </div>
+          <textarea name="Post" id="text-area" cols="30" rows="10" placeholder="Enter your text here !!!" required maxlength="500"></textarea>
+          <br />
+          <br />
+          <button type="submit" class="see-project" id="see-footer"> Get in touch
+          </button>
+        </form>
         <br />
         <br />
         <br />
