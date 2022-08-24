@@ -17,7 +17,7 @@ I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4
 
 ## Live Demo
 
-[My Portfolio with Contact-me](https://olivier-kango.netlify.app/)
+[My Portfolio with Contact-me](https://portofolio-contactme.netlify.app/)
 
 
 ## Getting Started
@@ -41,7 +41,7 @@ To run this app on your local computer you need the browser (Google Chrome is th
 
 ### Screenshort
 
-![portfolio](https://user-images.githubusercontent.com/108806646/185592907-292a1e5b-2a6f-4348-8e99-253096f5c65a.png)
+![portfolio-contact](https://user-images.githubusercontent.com/108806646/186346123-f8935dbd-92b2-4816-b321-3552d553230f.png)
 
 
 ## Author
