@@ -41,7 +41,7 @@ To run this app on your local computer you need the browser (Google Chrome is th
 
 ### Screenshort
 
-![portfolio-contact] <img width="396" margin="0 auto" alt="contactme" src="https://user-images.githubusercontent.com/108806646/186347498-f50cb395-eb72-411e-8850-66639533db3a.png">
+<img width="396" margin="0 auto" alt="contactme" src="https://user-images.githubusercontent.com/108806646/186347498-f50cb395-eb72-411e-8850-66639533db3a.png">
 
 
 ## Author
