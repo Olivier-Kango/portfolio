@@ -30,7 +30,7 @@ header {
 .container_menu {
   display: block;
   cursor: pointer;
-  padding: 0px;
+  padding: 0;
   width: auto;
 }
 
@@ -67,7 +67,7 @@ header .header_name {
   width: 80%;
   position: fixed;
   padding: 20px 10%;
-  margin: 0;  
+  margin: 0;
 }
 
 footer > form > ul {
@@ -208,7 +208,7 @@ footer p {
   flex-wrap: wrap;
   padding: 0;
   padding-bottom: 20px;
-  border-bottom: 2px solid #646369;  
+  border-bottom: 2px solid #646369;
 }
 
 .frame46 div ul li {
@@ -245,6 +245,19 @@ a {
   font-size: 30px;
 }
 
+.second h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 55px 0;
+  margin: 0;
+  color: #fff;
+}
+
+.main-section h2 {
+  cursor: pointer;
+}
+
 a:hover,
 h1:hover,
 h2:hover,
@@ -260,13 +273,21 @@ h2:hover,
   background-color: #0d99ff;
 }
 
-.work, .work2 {
+.work,
+.work2 {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
   color: #a2a3ae;
   width: auto;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
 .second p {
@@ -288,7 +309,7 @@ h2:hover,
   color: #f5f5ff;
   background: #7d73fc;
   padding: 12px;
-  margin: 40px 0PX;
+  margin: 40px 0;
   margin-bottom: 12px;
   cursor: pointer;
   background-image: linear-gradient(#9690fe 0, #6358fd 100%);
@@ -338,7 +359,7 @@ h2:hover,
   display: none;
 }
 
-#arrow-down {
+.arrow-down {
   margin-right: 10px;
   margin-top: 20px;
   font-size: 25px;
@@ -358,19 +379,25 @@ h2:hover,
 }
 
 .div-one {
+  float: left;
+  overflow: hidden;
   background: white;
-  height: 40vh;
-  width: 100%;
+  height: 30vh;
+  width: 120%;
   margin: 55px 0 20px 0;
+  background-image: url("./assets/images/work-img-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: 0.5s;
 }
 
-.second h2 {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  padding: 55px 0;
-  margin: 0;
-  color: #fff;
+.div-one:hover {
+  background-size: 130% 130%;
+}
+
+.div-two {
+  width: 80%;
 }
 
 .p2 ul {
@@ -399,7 +426,7 @@ h2:hover,
   height: 261.6px;
   left: 88%;
   top: 2200px;
-  background: #EDECFF;
+  background: #edecff;
   filter: blur(50px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
@@ -420,7 +447,7 @@ h2:hover,
   height: 377.04px;
   left: 65%;
   top: 3860px;
-  background: #EDECFF;
+  background: #edecff;
   filter: blur(50px);
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
@@ -475,10 +502,8 @@ textarea:valid {
 }
 
 .main-section {
- text-align: left;
+  text-align: left;
 }
-
-
 
 .ellipse-menu-1 {
   position: absolute;
@@ -497,14 +522,9 @@ textarea:valid {
   height: 244.06px;
   left: 418.94px;
   top: 500px;
-
   background: rgba(237, 236, 255, 0.9);
   filter: blur(50px);
   transform: rotate(40.52deg);
-} 
-
-.main-section h2 {
-  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -514,7 +534,7 @@ textarea:valid {
 
   .li-desk {
     color: white;
-    display: flex; 
+    display: flex;
   }
 
   .li-desk ul {
@@ -547,16 +567,16 @@ textarea:valid {
     font-size: 40px;
     line-height: 47px;
     margin-top: 24px 0;
-    color: #DFE1E6;
+    color: #dfe1e6;
   }
 
   .main-text p {
-   margin-top: 88px;
-   width: 448px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-bottom: 50px;
-   color: #B3BAC5;
+    margin-top: 88px;
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    color: #b3bac5;
   }
 
   .frame46 {
@@ -564,9 +584,23 @@ textarea:valid {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .social-icone {
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .second {
+    flex-direction: row;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .div-one {
+    height: 50vh;
   }
 
   .work,
@@ -574,13 +608,8 @@ textarea:valid {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     margin: 0;
-  }
-
-  .social-icone {
-    display: flex;
-    justify-content: space-between;
   }
 
   .work {
@@ -592,6 +621,7 @@ textarea:valid {
     font-size: 64px;
     line-height: 114px;
     margin-top: 80px;
+    text-transform: none;
   }
 
   .elipse_top_left {
@@ -617,29 +647,21 @@ textarea:valid {
     top: 450px;
     background: #edecff;
     filter: blur(50px);
-  }  
-
-  .recent-work h1 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 114px;
-    text-transform: none;
-  } 
+  }
 
   .p2 ul {
     float: left;
     align-content: space-between;
   }
 
- .see-project p {
-  clear: both;
-  margin: 120px 0px;
- }
+  .see-project p {
+    clear: both;
+    margin: 120px 0;
+  }
 
- .css {
-  
-  padding: 0;
-  margin: 0;
-  width: 0;
- }
+  .css {
+    padding: 0;
+    margin: 0;
+    width: 0;
+  }
 }
