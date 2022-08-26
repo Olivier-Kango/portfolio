@@ -68,6 +68,7 @@ header .header_name {
   position: fixed;
   padding: 20px 10%;
   margin: 0;
+  z-index: 1;
 }
 
 footer > form > ul {
@@ -77,6 +78,7 @@ footer > form > ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-right: -15px;
 }
 
 .header_name ul {
@@ -226,7 +228,7 @@ footer p {
 
 .elipse_right {
   position: absolute;
-  width: 48px;
+  width: 40px;
   height: 68px;
   right: 0;
   top: 610px;
@@ -284,10 +286,9 @@ h2:hover,
 }
 
 .second {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   gap: 2.5rem;
+  flex-direction: row;
 }
 
 .second p {
@@ -379,25 +380,25 @@ h2:hover,
 }
 
 .div-one {
-  float: left;
   overflow: hidden;
   background: white;
-  height: 30vh;
-  width: 120%;
   margin: 55px 0 20px 0;
   background-image: url("./assets/images/work-img-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   transition: 0.5s;
-}
-
-.div-one:hover {
-  background-size: 130% 130%;
+  position: relative;
+  width: 100%;
+  padding-top: 70%;
 }
 
 .div-two {
-  width: 80%;
+  width: 100%;
+}
+
+.div-one:hover {
+  background-size: 119% 139%;
 }
 
 .p2 ul {
@@ -422,9 +423,9 @@ h2:hover,
 
 .elipse-4 {
   position: absolute;
-  width: 70.28px;
+  width: 60px;
   height: 261.6px;
-  left: 88%;
+  left: 45%;
   top: 2200px;
   background: #edecff;
   filter: blur(50px);
@@ -443,9 +444,9 @@ h2:hover,
 
 .elipse-6 {
   position: absolute;
-  width: 101.29px;
+  width: 70px;
   height: 377.04px;
-  left: 65%;
+  left: 30%;
   top: 3860px;
   background: #edecff;
   filter: blur(50px);
@@ -527,6 +528,22 @@ textarea:valid {
   transform: rotate(40.52deg);
 }
 
+.fa-hand-peace-o {
+  animation-duration: 3s;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 768px) {
   .container_menu {
     display: none;
@@ -560,6 +577,26 @@ textarea:valid {
     font-size: 90px;
     line-height: 105px;
     margin-bottom: 0;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  footer h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
   }
 
   .section-top h2 {
@@ -568,6 +605,21 @@ textarea:valid {
     line-height: 47px;
     margin-top: 24px 0;
     color: #dfe1e6;
+    animation-duration: 1.7s;
+    animation-name: moveLeft300px;
+    animation-direction: alternate;
+  }
+
+  @keyframes moveLeft300px {
+    from {
+      margin-left: 0%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 100%;
+      width: 100%;
+    }
   }
 
   .main-text p {
@@ -583,6 +635,11 @@ textarea:valid {
     width: 448px;
     margin-left: auto;
     margin-right: auto;
+    display: none;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #646369;
   }
 
   .social-icone {
@@ -591,16 +648,8 @@ textarea:valid {
     justify-content: space-between;
   }
 
-  .second {
-    flex-direction: row;
-  }
-
   .reverse {
     flex-direction: row-reverse;
-  }
-
-  .div-one {
-    height: 50vh;
   }
 
   .work,
@@ -639,29 +688,55 @@ textarea:valid {
     justify-content: center;
   }
 
-  .elipse_right {
-    position: absolute;
-    width: 226px;
-    height: 226px;
-    left: 77%;
-    top: 450px;
-    background: #edecff;
-    filter: blur(50px);
-  }
-
   .p2 ul {
     float: left;
-    align-content: space-between;
+    width: 30vw;
   }
 
   .see-project p {
     clear: both;
     margin: 120px 0;
+    margin: 40px 0 0 0;
   }
 
-  .css {
-    padding: 0;
+  .second {
+    display: flex;
+    align-items: center;
+  }
+
+  .div-one {
+    padding-top: 40%;
+    position: inherit;
+  }
+
+  .div-two {
     margin: 0;
-    width: 0;
+    padding: 0;
+    width: 30vw;
+  }
+
+  .div-two h2 {
+    padding: 20px 0;
+  }
+
+  .stories {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .elipse_right {
+    position: absolute;
+    width: 226px;
+    height: 226px;
+    right: 20px;
+    top: 310px;
+    background: #edecff;
+    filter: blur(50px);
   }
 }
