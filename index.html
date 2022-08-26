@@ -10,23 +10,25 @@
     <title>Portoflio</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav class="header_name">
+    <header>
+      <nav class="header_name">
+        <a href="/" class="top"><h2 id="top" >Olivier</h2></a>   
+        <a href="main.html" class="container_menu" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a> 
+        <div class="li-desk">
           <ul>
-            <li> <a href="/" class="top"><h2 id="top" >Olivier</h2></a></li>
-            <li>
-              <div class="container_menu"    onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </li>
+            <li><a href="">Portoflio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:olivierkango@gmail.com"><i class="fa fa-envelope"></i></a>
           </ul>
-        </nav>
-        
-      </header>
-    
+        </div>  
+      </nav> 
+    </header>
+    <div class="container">
       <section class="section-top">
         <h1>Olivier Kango</h1>
         <h2>software developer</h2>
@@ -82,13 +84,21 @@
             </li>
           </ul>
         </nav>
-        <div class="work">
+        <a href="#recent-work" class="work">
           <p id="arrow-down">&darr;</p>
           <p>Work</p>
-        </div>
+        </a>
+        <a href="#recent-work" class="work2">
+          <p id="arrow-down">&darr;</p>
+          <p>Work</p>
+        </a>
       </div>
       <section class="recent-work">
-        <h1>MY RECENT WORK</h1>
+        <br  id="recent-work">
+        <br>
+        <br>
+        <br>
+        <h1>My recent work</h1>
         <div class="div-one"></div>
         <article class="second">
           <div class="elipse-3"></div>
@@ -96,7 +106,7 @@
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <div class="p2">
             <ul>
-              <li>css</li>
+              <li class="css">css</li>
               <li class="rect">html</li>
               <li class="rect">boostrap</li>
               <li class="rect">Ruby</li>
@@ -108,11 +118,12 @@
         <div class="div-one"></div>
         </article>
         <article class="second">
+          <div class="elipse-4"></div>
           <h2>Multi-Post Stories</h2>
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <div class="p2">
             <ul>
-              <li>css</li>
+              <li class="css">css</li>
               <li class="rect">html</li>
               <li class="rect">boostrap</li>
               <li class="rect">Ruby</li>
@@ -124,11 +135,12 @@
         <div class="div-one"></div>
         </article>
         <article class="second">
+          <div class="elipse-5"></div>
           <h2>Multi-Post Stories</h2>
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <div class="p2">
             <ul>
-              <li>css</li>
+              <li class="css">css</li>
               <li class="rect">html</li>
               <li class="rect">boostrap</li>
               <li class="rect">Ruby</li>
@@ -140,11 +152,12 @@
         </article>
         <div class="div-one"></div>
         <article class="second">
+          <div class="elipse-6"></div>
           <h2>Multi-Post Stories</h2>
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
           <div class="p2">
             <ul>
-              <li>css</li>
+              <li class="css">css</li>
               <li class="rect">html</li>
               <li class="rect">boostrap</li>
               <li class="rect">Ruby</li>
@@ -155,6 +168,7 @@
           </div>
         </article>
       </section>
+      <br id="contact">
       <footer>
         <h2>
           CONTACT ME
@@ -207,12 +221,6 @@
         </div>
         <p id="bottom">olivierkango@gmail.com</p>
       </footer>
-    </div>
-    
-    <script>
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
-    </script>
+  </div>
   </body>
 </html>
