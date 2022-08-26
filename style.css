@@ -78,7 +78,6 @@ footer > form > ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-right: -15px;
 }
 
 .header_name ul {
@@ -256,8 +255,10 @@ a {
   color: #fff;
 }
 
-.main-section h2 {
+.main-section {
+  text-align: left;
   cursor: pointer;
+  z-index: 99;
 }
 
 a:hover,
@@ -265,7 +266,7 @@ h1:hover,
 h2:hover,
 .top:hover,
 #top:hover,
-.main-section h2:hover {
+.main-section:hover {
   color: #0d99ff;
 }
 
@@ -502,36 +503,38 @@ textarea:valid {
   background-image: linear-gradient(to top, rgba(0, 0, 255, 0.176), rgba(0, 0, 255, 0.046));
 }
 
-.main-section {
-  text-align: left;
-}
-
 .ellipse-menu-1 {
   position: absolute;
   width: 226px;
   height: 427px;
-  left: 42.04px;
-  top: 92px;
+  left: -150px;
+  top: 150px;
   background: rgba(237, 236, 255, 0.4);
   filter: blur(50px);
   transform: rotate(25.09deg);
+  z-index: -1;
 }
 
 .ellipse-menu-2 {
   position: absolute;
-  width: 420.13px;
-  height: 244.06px;
-  left: 418.94px;
-  top: 500px;
+  width: 150.13px;
+  height: 180px;
+  left: 150px;
+  top: 450px;
   background: rgba(237, 236, 255, 0.9);
   filter: blur(50px);
   transform: rotate(40.52deg);
+  z-index: -1;
 }
 
 .fa-hand-peace-o {
   animation-duration: 3s;
   animation-name: rotation;
   animation-iteration-count: infinite;
+}
+
+.delete {
+  color: #191765;
 }
 
 @keyframes rotation {
