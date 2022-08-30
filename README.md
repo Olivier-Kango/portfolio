@@ -17,7 +17,7 @@ I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4
 
 ## Live Demo
 
-[My Portfolio](https://olivier-kango.netlify.app/)
+[My Portfolio](https://olivier-kango.github.io/portfolio/)
 
 
 ## Getting Started
