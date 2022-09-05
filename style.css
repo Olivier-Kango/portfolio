@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -38,6 +38,17 @@ header {
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -53,7 +64,9 @@ header {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 { opacity: 0; }
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -256,7 +269,7 @@ a {
 }
 
 .main-section {
-  text-align: left;
+  text-align: right;
   cursor: pointer;
   z-index: 99;
 }
@@ -340,7 +353,7 @@ h2:hover,
 }
 
 .medium {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .work {
@@ -459,7 +472,7 @@ h2:hover,
 }
 
 #m {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .div-footer {
@@ -494,7 +507,11 @@ input[type="text"]:valid,
 input[type="email"]:valid,
 textarea:valid {
   border: 1px solid rgba(0, 0, 255, 0.45);
-  background-image: linear-gradient(to top, rgba(0, 0, 255, 0.176), rgba(0, 0, 255, 0.046));
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 255, 0.176),
+    rgba(0, 0, 255, 0.046)
+  );
 }
 
 .ellipse-menu-1 {
