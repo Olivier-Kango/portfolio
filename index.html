@@ -10,14 +10,15 @@
     <title>Portoflio</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <nav class="header_name">
         <a href="/" class="top"><h2 id="top" >Olivier</h2></a>   
-        <a href="main.html" class="container_menu" onclick="myFunction(this)">
+        <div class="container_menu">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
-        </a> 
+        </div> 
         <div class="li-desk">
           <ul>
             <li><a href="">Portoflio</a></li>
@@ -28,6 +29,7 @@
         </div>  
       </nav> 
     </header>
+    <!-- MAIN SECTION -->
     <div class="container">
       <section class="section-top">
         <h1>Olivier Kango</h1>
@@ -177,6 +179,7 @@
         </article>
       </section>
       <br id="contact">
+      <!-- FOOTER -->
       <footer>
         <h2>
           Contact Me!
@@ -231,5 +234,14 @@
         <p id="bottom">olivierkango@gmail.com</p>
       </footer>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+      const menu = document.querySelector('.container_menu');
+      function display () {
+        menu.classList.toggle('change')
+      }
+      menu.addEventListener ('click', display);
+    </script>
   </body>
 </html>

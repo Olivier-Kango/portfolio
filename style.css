@@ -270,12 +270,6 @@ h2:hover,
   color: #0d99ff;
 }
 
-.bar1:hover,
-.bar2:hover,
-.bar3:hover {
-  background-color: #0d99ff;
-}
-
 .work,
 .work2 {
   font-style: normal;
