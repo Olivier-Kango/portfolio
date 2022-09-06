@@ -19,49 +19,22 @@
     <!-- HEADER -->
     <header>
       <nav class="header_name">
-        <a href="/" class="top"><h2 id="top">Olivier</h2></a>
+        <a href="#" class="top"><h2 id="top">Olivier</h2></a>
+        <ul class="li-desk">
+          <li class="nav-item"><a class="nav-link" href="#">Portoflio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recent-work">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-mailto">
+            <a class="nav-link" href="mailto:olivierkango@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
         <div class="container_menu">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <div class="li-desk">
-          <ul>
-            <li><a href="">Portoflio</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="mailto:olivierkango@gmail.com"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="mobile-menu">
-          <ul>
-            <li><a href="">Portoflio</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="mailto:olivierkango@gmail.com"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="ellipse-menu-1"></div>
-        <div class="ellipse-menu-2"></div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="container container-2">
-          <a href="index.html" class="main-section">Portfolio</a>
-          <a href="index.html" class="main-section">About</a>
-          <a href="index.html#contact" class="main-section">Contact</a>
-        </div> -->
       </nav>
     </header>
     <!-- MAIN SECTION -->
@@ -338,24 +311,6 @@
     </div>
 
     <!-- JavaScript -->
-    <script>
-      const menu = document.querySelector(".container_menu")
-      const menuList = document.querySelector(".mobile-menu")
-
-      let isMenuActive = false
-
-      function display() {
-        menu.classList.toggle("change")
-
-        if (!isMenuActive) {
-          menuList.style = "display: block"
-          isMenuActive = true
-        } else {
-          menuList.style = "display: none"
-          isMenuActive = false
-        }
-      }
-      menu.addEventListener("click", display)
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

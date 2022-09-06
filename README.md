@@ -4,15 +4,13 @@
 
 My portfolio project is prepared for different screen sizes. However, I built it by using "mobile first" approach. 
 
-> In this particular branch "desktop", I added the Desktop version.
-
 I used Laura Jong's [template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10.).
 
 
 ## Built With
 
 - Library : Font Awesome
-- Technologies : Html & CSS
+- Technologies : Html & CSS & JavaScript
 
 
 ## Live Demo
