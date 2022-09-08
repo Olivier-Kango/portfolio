@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('change');
 }));
 
-// PROJECTS IN JS
+//  PROJECTS IN JS
 const listProjects = [
   {
     name: 'Multi-Post Stories',
