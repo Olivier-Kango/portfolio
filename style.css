@@ -83,18 +83,26 @@ footer > form > ul {
 .li-desk {
   display: flex;
   position: fixed;
-  gap: 45px;
-  flex-direction: column;
   align-items: flex-start;
   padding: 20% 10%;
   top: -5%;
   height: 110vh;
   width: 100%;
   left: -120%;
-  color: white;
   transition: 0.3s;
   background: #191765;
   z-index: 1;
+}
+
+.li-desk ul {
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  transition: 0.3s;
 }
 
 .li-desk.change {
@@ -225,6 +233,13 @@ footer p {
   padding: 15px;
 }
 
+.poop-p2 ul li {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 5px;
+  margin: 0;
+}
+
 .frame46 {
   display: flex;
   flex-wrap: wrap;
@@ -277,21 +292,37 @@ a {
   color: #fff;
 }
 
-a:hover,
-h1:hover,
-h2:hover,
-.top:hover,
-#top:hover,
-.css:hover,
-.rect:hover,
-.main-section:hover,
-.title-lang:hover,
-.list:hover, 
-.section-top h2:hover,
-.recent-work h1 a:hover,
-.modal-header .title:hover,
-.modal-header .close-button:hover {
+.rect {
+  border-left: 1px solid #555;
+  cursor: pointer;
+}
+
+.css {
+  cursor: pointer;
+}
+
+.modal-header .title {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+a:hover {
   color: #0d99ff;
+}
+
+.recent-work h1 a {
+  color: #9490ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: auto;
 }
 
 .work,
@@ -345,11 +376,6 @@ h2:hover,
   touch-action: manipulation;
 }
 
-.see-project button:hover,
-#see-footer:hover {
-  background: #5046d6;
-}
-
 .social-icone {
   margin: 0 auto;
   padding: 40px;
@@ -392,18 +418,6 @@ h2:hover,
   border-bottom: 2px solid #646369;
 }
 
-.recent-work h1 a {
-  color: #9490ff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: left;
-  text-transform: uppercase;
-  cursor: pointer;
-  width: auto;
-}
-
 .div-one {
   overflow: hidden;
   background: white;
@@ -430,15 +444,6 @@ h2:hover,
   display: flex;
   align-content: space-between;
   padding: 0;
-}
-
-.rect {
-  border-left: 1px solid #555;
-}
-
-.rect,
-.css {
-  cursor: pointer;
 }
 
 .elipse-3 {
@@ -587,7 +592,7 @@ textarea:valid {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.147);
   width: 90%;
@@ -604,21 +609,11 @@ textarea:valid {
   align-items: center;
 }
 
-.modal-header .title {
-  font-size: 1.25rem;
-  color: white;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  cursor: pointer;
-}
-
 .modal-header .close-button {
   cursor: pointer;
   border: none;
-  outline: one;
+  outline: none;
   background: none;
-  font-size: 1.25rem;
   color: white;
   font-size: 30px;
 }
@@ -632,8 +627,8 @@ textarea:valid {
   background-position: center;
   background-size: 100% 100%;
   transition: 0.5s;
-  position: relative;  
-  background-color: white; 
+  position: relative;
+  background-color: white;
   height: 181px;
   cursor: pointer;
 }
@@ -675,29 +670,41 @@ textarea:valid {
   width: 70%;
 }
 
-
-.poop-p2 ul li {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  padding: 5px;
-  margin: 0;
-  
-}
-
 .poop-project button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 4%;
-} 
+}
 
 #see-source {
- margin-top: 10px;
- margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 #github-none {
   display: none;
+}
+
+.see-project button:hover,
+#see-footer:hover {
+  background: #5046d6;
+}
+
+h1:hover,
+h2:hover,
+.top:hover,
+#top:hover,
+.css:hover,
+.rect:hover,
+.main-section:hover,
+.title-lang:hover,
+.list:hover,
+.section-top h2:hover,
+.recent-work h1 a:hover,
+.modal-header .title:hover,
+.modal-header .close-button:hover {
+  color: #0d99ff;
 }
 
 /* FOR DESKTOP */
@@ -746,22 +753,37 @@ textarea:valid {
     z-index: 7;
   }
 
+  .recent-work h1 a {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 114px;
+    margin-top: 80px;
+    text-transform: none;
+    width: auto;
+  }
+
   .li-desk {
     position: absolute;
     top: 25%;
     margin: 0;
     padding: 0;
-    flex-direction: row;
-    align-items: center;
-    gap: 55px;
-    color: white;
     height: unset;
     width: fit-content;
     left: unset;
     transition: 0.3s;
   }
 
-  .li-desk li a {
+  .li-desk ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 55px;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .li-desk ul li a {
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
@@ -851,15 +873,6 @@ textarea:valid {
     order: -1;
   }
 
-  .recent-work h1 a {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 114px;
-    margin-top: 80px;
-    text-transform: none;
-    width: auto;
-  }
-
   .elipse_top_left {
     position: absolute;
     width: 184px;
@@ -933,7 +946,7 @@ textarea:valid {
   .modal {
     width: 60%;
   }
- 
+
   .modal-header {
     padding: 2% 5%;
   }
@@ -944,7 +957,7 @@ textarea:valid {
   }
 
   .modal-body {
-    padding: 0 5% 2% 5%; 
+    padding: 0 5% 2% 5%;
   }
 
   #overlay {
@@ -958,7 +971,7 @@ textarea:valid {
   #see-source {
     margin-top: 0;
     margin-bottom: 0;
-   }
+  }
 
   .poop-project {
     display: flex;
@@ -969,7 +982,7 @@ textarea:valid {
     margin-top: 4%;
     margin-bottom: 4%;
   }
-  
+
   #github-none {
     display: block;
   }
