@@ -69,7 +69,7 @@ const listProjects = [
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
     },
-  }
+  },
 ];
 
 const findSkills = (skills) => {

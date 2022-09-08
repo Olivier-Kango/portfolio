@@ -612,7 +612,7 @@ textarea:valid {
 .modal-header .close-button {
   cursor: pointer;
   border: none;
-  outline: nnone;
+  outline: none;
   background: none;
   color: white;
   font-size: 30px;
