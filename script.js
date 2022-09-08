@@ -1,4 +1,3 @@
-//HAMBURGER BUTTON
 const hamburger = document.querySelector('.container_menu');
 const navMenu = document.querySelector('.li-desk');
 
@@ -12,10 +11,10 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('change');
 }));
 
-//PROJECTS IN JS
+// PROJECTS IN JS
 const listProjects = [
   {
-    name: "Multi-Post Stories",
+    name: 'Multi-Post Stories',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     skills: ['css', 'html', 'bootstrap', 'Ruby'],
     feature: "See Project",
@@ -24,11 +23,11 @@ const listProjects = [
       popButton: "&times;",
       popDescription: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!",
       popSkills: ['html', 'css', 'Ruby', 'Github'],
-      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,  
+      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,
       featureTwo: `See Source &nbsp; <i class="fa fa-github"></i>`
     }
   },
-   {
+  {
     name: "Multi-Post Stories",
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     skills: ['css', 'html', 'bootstrap', 'Ruby'],
@@ -38,7 +37,7 @@ const listProjects = [
       popButton: "&times;",
       popDescription: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!",
       popSkills: ['html', 'css', 'Ruby', 'Github'],
-      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,  
+      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,
       featureTwo: `See Source &nbsp; <i class="fa fa-github"></i>`
     }
   },
@@ -52,7 +51,21 @@ const listProjects = [
       popButton: "&times;",
       popDescription: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!",
       popSkills: ['html', 'css', 'Ruby', 'Github'],
-      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,  
+      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,
+      featureTwo: `See Source &nbsp; <i class="fa fa-github"></i>`
+    }
+  },
+  {
+    name: "Multi-Post Derrick",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    skills: ['css', 'html', 'bootstrap', 'Ruby'],
+    feature: "See Project",
+    listPopupProjects: {
+      popName: "Multi-Post Derrick",
+      popButton: "&times;",
+      popDescription: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!",
+      popSkills: ['html', 'css', 'Ruby', 'Github'],
+      featureOne: `See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>`,
       featureTwo: `See Source &nbsp; <i class="fa fa-github"></i>`
     }
   }
@@ -64,177 +77,175 @@ const findSkills = skills => {
   return list;
 }
 
-  listProjects.forEach((project, index) => {
-    const article = document.createElement('article');
-    let secondClass = index % 2 === 0 ? 'second' : 'second reverse'
-    article.setAttribute('class', secondClass);
-    if(index === 0) article.setAttribute('id', 'multi');
+listProjects.forEach((project, index) => {
+  const article = document.createElement('article');
+  let secondClass = index % 2 === 0 ? 'second' : 'second reverse'
+  article.setAttribute('class', secondClass);
+  if (index === 0) article.setAttribute('id', 'multi');
 
 
-    const projects = document.querySelector('.projects');
-    projects.appendChild(article);
-
-    
-    const name = project.name;
-    const description = project.description;
-    const skills = project.skills;
-    const feature = project.feature;
-
-    const divOne = document.createElement('div');
-    divOne.setAttribute('class', 'div-one');
-    article.appendChild(divOne);
+  const projects = document.querySelector('.projects');
+  projects.appendChild(article);
 
 
-    const divTwo = document.createElement('div');
-    divTwo.setAttribute('class', 'div-two');
-    article.appendChild(divTwo);
+  const name = project.name;
+  const description = project.description;
+  const skills = project.skills;
+  const feature = project.feature;
 
+  const divOne = document.createElement('div');
+  divOne.setAttribute('class', 'div-one');
+  article.appendChild(divOne);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = name;
-    divTwo.appendChild(h2);
+  const divTwo = document.createElement('div');
+  divTwo.setAttribute('class', 'div-two');
+  article.appendChild(divTwo);
 
-    const p = document.createElement('p');
-    p.setAttribute('class','stories');
-    p.textContent = description;
-    divTwo.appendChild(p)
+  const h2 = document.createElement('h2');
+  h2.textContent = name;
+  divTwo.appendChild(h2);
 
-    const div2 = document.createElement('div');
-    div2.setAttribute('class','p2');
-    divTwo.appendChild(div2)
+  const p = document.createElement('p');
+  p.setAttribute('class', 'stories');
+  p.textContent = description;
+  divTwo.appendChild(p)
 
-    const ul = document.createElement('ul');
-    ul.innerHTML = findSkills(skills);
-    div2.appendChild(ul);
+  const div2 = document.createElement('div');
+  div2.setAttribute('class', 'p2');
+  divTwo.appendChild(div2)
 
-    const features = document.createElement('div');
-    features.setAttribute('class','see-project');
-    divTwo.appendChild(features);
+  const ul = document.createElement('ul');
+  ul.innerHTML = findSkills(skills);
+  div2.appendChild(ul);
+
+  const features = document.createElement('div');
+  features.setAttribute('class', 'see-project');
+  divTwo.appendChild(features);
 
 
 
-    const button = document.createElement('button');
-    button.setAttribute('data-modal-target', `#modal-${index}`);
-    button.textContent = feature;
-    features.appendChild(button);
+  const button = document.createElement('button');
+  button.setAttribute('data-modal-target', `#modal-${index}`);
+  button.textContent = feature;
+  features.appendChild(button);
 
-    const listPopupProject = project.listPopupProjects;
+  const listPopupProject = project.listPopupProjects;
 
-    const popName = listPopupProject.popName;
-    const popButton = listPopupProject.popButton;
-    const popDescription = listPopupProject.popDescription;
-    const popSkills = listPopupProject.popSkills;
-    const featureOne = listPopupProject.featureOne;
-    const featureTwo = listPopupProject.featureTwo;
+  const popName = listPopupProject.popName;
+  const popButton = listPopupProject.popButton;
+  const popDescription = listPopupProject.popDescription;
+  const popSkills = listPopupProject.popSkills;
+  const featureOne = listPopupProject.featureOne;
+  const featureTwo = listPopupProject.featureTwo;
 
 
-    //const popup = document.querySelector('.div-popup');
-    const popup = document.createElement('div');
-    popup.setAttribute('class', 'div-popup');
-    const body = document.querySelector('body');
+  //const popup = document.querySelector('.div-popup');
+  const popup = document.createElement('div');
+  popup.setAttribute('class', 'div-popup');
+  const body = document.querySelector('body');
 
-    const modal = document.createElement('div');
-    modal.setAttribute('class', 'modal');
-    modal.setAttribute('id', `modal-${index}`);
-    projects.appendChild(modal);
+  const modal = document.createElement('div');
+  modal.setAttribute('class', 'modal');
+  modal.setAttribute('id', `modal-${index}`);
+  projects.appendChild(modal);
 
-    const modalHeader = document.createElement('div');
-    modalHeader.setAttribute('class', 'modal-header');
-    modal.appendChild(modalHeader);
+  const modalHeader = document.createElement('div');
+  modalHeader.setAttribute('class', 'modal-header');
+  modal.appendChild(modalHeader);
 
-    const title = document.createElement('div');
-    title.setAttribute('class', 'title');
-    title.textContent = popName;
-    modalHeader.appendChild(title);
+  const title = document.createElement('div');
+  title.setAttribute('class', 'title');
+  title.textContent = popName;
+  modalHeader.appendChild(title);
 
-    const closeButton = document.createElement('button');
-    closeButton.setAttribute('data-close-button', '');
-    closeButton.setAttribute('class', 'close-button');
-    closeButton.innerHTML = popButton;
-    modalHeader.appendChild(closeButton);
+  const closeButton = document.createElement('button');
+  closeButton.setAttribute('data-close-button', '');
+  closeButton.setAttribute('class', 'close-button');
+  closeButton.innerHTML = popButton;
+  modalHeader.appendChild(closeButton);
 
-    const findPopSkills = popSkills => {
+  const findPopSkills = popSkills => {
     let list = '';
     popSkills.forEach((popSkill, i) => popSkill !== 'Github' ? list += `<li class='rect'>${popSkill}</li>` : list += `<li class='rect' id='github-none'>${popSkill}</li>`);
     return list;
-    }
+  }
 
-    const snapshoot = document.createElement('div');
-    snapshoot.setAttribute('class', 'snapshoot');
-    modal.appendChild(snapshoot);
+  const snapshoot = document.createElement('div');
+  snapshoot.setAttribute('class', 'snapshoot');
+  modal.appendChild(snapshoot);
 
-    const modalBody = document.createElement('div');
-    modalBody.setAttribute('class', 'modal-body');
-    modalBody.textContent = popDescription;
-    modal.appendChild(modalBody);
+  const modalBody = document.createElement('div');
+  modalBody.setAttribute('class', 'modal-body');
+  modalBody.textContent = popDescription;
+  modal.appendChild(modalBody);
 
-    const poopP2 = document.createElement('div');
-    poopP2.setAttribute('class', 'p2 poop-p2');
-    modal.appendChild(poopP2);
+  const poopP2 = document.createElement('div');
+  poopP2.setAttribute('class', 'p2 poop-p2');
+  modal.appendChild(poopP2);
 
-    const popUl = document.createElement('ul');
-    popUl.innerHTML = findPopSkills(popSkills);
-    poopP2.appendChild(popUl);
+  const popUl = document.createElement('ul');
+  popUl.innerHTML = findPopSkills(popSkills);
+  poopP2.appendChild(popUl);
 
-    const poopProject = document.createElement('div');
-    poopProject.setAttribute('class', 'see-project poop-project')
-    modal.appendChild(poopProject);
+  const poopProject = document.createElement('div');
+  poopProject.setAttribute('class', 'see-project poop-project')
+  modal.appendChild(poopProject);
 
-    const buttonFtOne = document.createElement('button');
-    buttonFtOne.innerHTML = featureOne;
-    poopProject.appendChild(buttonFtOne);
+  const buttonFtOne = document.createElement('button');
+  buttonFtOne.innerHTML = featureOne;
+  poopProject.appendChild(buttonFtOne);
 
-    const buttonFtTwoo = document.createElement('button');
-    buttonFtTwoo.innerHTML = featureTwo;
-    poopProject.appendChild(buttonFtTwoo);
+  const buttonFtTwoo = document.createElement('button');
+  buttonFtTwoo.innerHTML = featureTwo;
+  poopProject.appendChild(buttonFtTwoo);
 
-    const overlayTwo = document.createElement('div');
-    overlayTwo.setAttribute('id', 'overlay');
-    body.appendChild(overlayTwo);
-  
-
-
-      // POPUP
-    const openModalButtons = document.querySelectorAll('[data-modal-target]');
-    const closeModalButtons = document.querySelectorAll('[data-close-button]');
-    const overlay = document.getElementById('overlay');
+  const overlayTwo = document.createElement('div');
+  overlayTwo.setAttribute('id', 'overlay');
+  body.appendChild(overlayTwo);
 
 
-    openModalButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const modal = document.querySelector(btn.dataset.modalTarget)
-        openModal(modal)
-      })
+
+  // POPUP
+  const openModalButtons = document.querySelectorAll('[data-modal-target]');
+  const closeModalButtons = document.querySelectorAll('[data-close-button]');
+  const overlay = document.getElementById('overlay');
+
+
+  openModalButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modal = document.querySelector(btn.dataset.modalTarget)
+      openModal(modal)
     })
+  })
 
 
-    overlay.addEventListener('click', () => {
-      const modals = document.querySelectorAll('.modal.active')
-      modals.forEach(modal => {
-        closeModal(modal)
-      })
+  overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+      closeModal(modal)
     })
+  })
 
 
 
 
-    closeModalButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const modal = button.closest('.modal')
-        closeModal(modal)
-      })
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal')
+      closeModal(modal)
     })
+  })
 
-    function openModal(modal) {
-      if(modal == null) return
-      modal.classList.add('active')
-      overlay.classList.add('active')
-    }
-    function closeModal(modal) {
-      if(modal == null) return
-      modal.classList.remove('active')
-      overlay.classList.remove('active')
-    }
+  function openModal(modal) {
+    if (modal == null) return
+    modal.classList.add('active')
+    overlay.classList.add('active')
+  }
+  function closeModal(modal) {
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+  }
 
 });
 
