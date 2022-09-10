@@ -70,15 +70,6 @@ header {
   z-index: 1;
 }
 
-footer > form > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .li-desk {
   display: flex;
   position: fixed;
@@ -466,16 +457,6 @@ h2:hover,
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
 }
 
-#text-area,
-#text-input,
-#email {
-  width: 95%;
-  padding: 10px;
-  font-size: 16px;
-  display: block;
-  margin: 0;
-}
-
 #m {
   font-family: "Times New Roman", Times, serif;
 }
@@ -506,13 +487,6 @@ h2:hover,
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-input[type="text"]:valid,
-input[type="email"]:valid,
-textarea:valid {
-  border: 1px solid rgba(0, 0, 255, 0.45);
-  background-image: linear-gradient(to top, rgba(0, 0, 255, 0.176), rgba(0, 0, 255, 0.046));
 }
 
 .ellipse-menu-1 {
@@ -559,6 +533,62 @@ textarea:valid {
   }
 }
 
+/* VALIDATION FORM */
+
+footer > form > div {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+textarea:valid {
+  border: 1px solid rgba(0, 0, 255, 0.45);
+  background-image: linear-gradient(to top, rgba(0, 0, 255, 0.176), rgba(0, 0, 255, 0.046));
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#message,
+#name,
+#email {
+  width: inherit;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.error input,
+.error textarea {
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.176), rgba(255, 0, 0, 0.046));
+}
+
+.success input,
+.success textarea {
+  border: 2px solid green;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, rgba(0, 255, 0, 0.176), rgba(0, 255, 0, 0.046));
+}
+
+.error small {
+  color: red;
+  background: white;
+  font-size: 14px;
+  width: inherit;
+  margin-top: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 10px;
+}
+
+/* DESKTOP */
 @media (min-width: 768px) {
   .container_menu {
     display: none;
