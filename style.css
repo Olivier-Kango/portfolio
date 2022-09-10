@@ -546,7 +546,11 @@ input[type="text"]:valid,
 input[type="email"]:valid,
 textarea:valid {
   border: 1px solid rgba(0, 0, 255, 0.45);
-  background-image: linear-gradient(to top, rgba(0, 0, 255, 0.176), rgba(0, 0, 255, 0.046));
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 255, 0.176),
+    rgba(0, 0, 255, 0.046)
+  );
 }
 
 input:focus,
@@ -567,19 +571,38 @@ textarea:focus {
 
 .error input,
 .error textarea {
-  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.176), rgba(255, 0, 0, 0.046));
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 0.176),
+    rgba(255, 0, 0, 0.046)
+  );
 }
 
 .success input,
 .success textarea {
   border: 2px solid green;
   border-radius: 4px;
-  background-image: linear-gradient(to top, rgba(0, 255, 0, 0.176), rgba(0, 255, 0, 0.046));
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 255, 0, 0.176),
+    rgba(0, 255, 0, 0.046)
+  );
 }
 
 .error small {
   color: red;
   background: white;
+  font-size: 14px;
+  width: inherit;
+  margin-top: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 10px;
+}
+
+.success small {
+  color: rgb(0, 255, 34);
+  background: rgb(190, 255, 201);
   font-size: 14px;
   width: inherit;
   margin-top: 0;

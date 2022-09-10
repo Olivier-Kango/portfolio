@@ -21,9 +21,13 @@
       <nav class="header_name">
         <a href="#" class="top"><h2 id="top">Olivier</h2></a>
         <ul class="li-desk">
-          <li class="nav-item"><a class="nav-link" href="#recent-work">Portoflio</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recent-work">Portoflio</a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
           <li class="nav-mailto">
             <a class="nav-link" href="mailto:olivierkango@gmail.com"
               ><i class="fa fa-envelope"></i
@@ -229,8 +233,13 @@
         </p>
         <br />
         <!-- CONTACT FORM -->
-        <form action="https://formspree.io/f/xrgdbpve" method="post" id="form">
-          <div class="field">
+        <form
+          novalidate
+          action="https://formspree.io/f/xrgdbpve"
+          method="post"
+          id="form"
+        >
+          <div class="field success" id="field-name">
             <input
               type="text"
               name="Names"
@@ -240,23 +249,22 @@
             />
             <small id="errorName"></small>
           </div>
-          <div class="field">
+          <div class="field" id="field-email">
             <input
               type="email"
-              name="E-mail"
+              name="email"
               id="email"
               placeholder="olivierkango@gmail.com"
             />
             <small id="errorEmail"></small>
           </div>
-          <div class="field">
+          <div class="field" id="field-text">
             <textarea
               name="Post"
               id="message"
               cols="30"
               rows="10"
               placeholder="Enter your text here !!!"
-          
               maxlength="500"
             ></textarea>
             <small id="errorMsg"></small>
