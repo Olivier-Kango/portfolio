@@ -6,18 +6,19 @@ const message = document.getElementById('message');
 const errorName = document.getElementById('errorName');
 const errorEmail = document.getElementById('errorEmail');
 const errorMsg = document.getElementById('errorMsg');
-
 const overralError = document.getElementById('overralError');
 
-const emailRegex =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const emailRegex = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 fname.addEventListener('input', () => {
-  if (fname.value.length !== 0 && fname.value.length < 20) {
+  if (fname.value.length !== 0 && fname.value.length < 3) {
+    errorName.textContent = 'Your name should have more than 2 characters.';
+    document.getElementById('field-name').setAttribute('class', 'error');
+  } else if (fname.value.length !== 0 && fname.value.length < 20) {
     errorName.textContent = '';
     document.getElementById('field-name').setAttribute('class', 'success');
   } else {
-    errorName.textContent = 'Name should be less than 30 characters.';
+    errorName.textContent = 'Your name should be less than 30 characters.';
     document.getElementById('field-name').setAttribute('class', 'error');
   }
 });
@@ -53,23 +54,22 @@ message.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  if (fname.value === '' && email.value === '' && message.value === '') {
-    overralError.textContent = 'Fill in entire form before submitting.';
-    document.getElementById('field').setAttribute('class', 'error');
-  } else {
-    overralError.textContent = '';
-  }
-
   if (
     fname.value.length > 3
     && fname.value.length < 30
     && message.value.length > 10
-    && message.value < 400
+    && message.value.length < 400
     && emailRegex.test(email.value)
+    && email.value === email.value.toLowerCase()
   ) {
     form.submit();
+  } else if (fname.value === '' || email.value === '' || message.value === '') {
+    overralError.textContent = 'Please fill in entire form before submitting.';
+    document.getElementById('field-overal').setAttribute('class', 'error');
+    event.preventDefault();
+  } else {
+    overralError.textContent = '';
+    overralError.style.display = 'none';
+    event.preventDefault();
   }
-  return false;
 });

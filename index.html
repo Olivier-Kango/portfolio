@@ -20,20 +20,20 @@
     <header>
       <nav class="header_name">
         <a href="#" class="top"><h2 id="top">Olivier</h2></a>
-        <ul class="li-desk">
-          <li class="nav-item">
-            <a class="nav-link" href="#recent-work">Portoflio</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-mailto">
-            <a class="nav-link" href="mailto:olivierkango@gmail.com"
-              ><i class="fa fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
+        <div class="li-desk">
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="#recent-work">Portoflio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-mailto">
+              <a class="nav-link" href="mailto:olivierkango@gmail.com"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <div id="ellipse-menu-2"></div>
+          <div id="ellipse-menu"></div>
+        </div>
         <div class="container_menu">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -47,7 +47,7 @@
         <h1>Olivier Kango</h1>
         <h2>software developer</h2>
         <div class="elipse_top_left"></div>
-        <div class="elipse_right"></div>
+        <div class="elipse_right"></div>   
         <div class="main-text">
           <p>
             I can help you build a product , feature or website Look through
@@ -120,108 +120,22 @@
         </a>
       </div>
       <section class="recent-work">
-        <br id="recent-work" />
+        <br />
+        <br id="recent-work"/>
         <br />
         <br />
-        <br />
-        <h1>My recent work</h1>
+        <h1><a href="#multi">My recent work</a></h1>
         <div class="elipse-3"></div>
-        <article class="second">
-          <div class="div-one"></div>
-          <div class="div-two">
-            <h2>Multi-Post Stories</h2>
-            <p class="stories">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="p2">
-              <ul>
-                <li class="css">css</li>
-                <li class="rect">html</li>
-                <li class="rect">boostrap</li>
-                <li class="rect">Ruby</li>
-              </ul>
-            </div>
-            <div class="see-project">
-              <p>See Project</p>
-            </div>
-          </div>
-        </article>
         <div class="elipse-4"></div>
-        <article class="second reverse">
-          <div class="div-one"></div>
-          <div class="div-two">
-            <h2>Multi-Post Stories</h2>
-            <p class="stories">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="p2">
-              <ul>
-                <li class="css">css</li>
-                <li class="rect">html</li>
-                <li class="rect">boostrap</li>
-                <li class="rect">Ruby</li>
-              </ul>
-            </div>
-            <div class="see-project">
-              <p>See Project</p>
-            </div>
-          </div>
-        </article>
         <div class="elipse-5"></div>
-        <article class="second">
-          <div class="div-one"></div>
-          <div class="div-two">
-            <h2>Multi-Post Stories</h2>
-            <p class="stories">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="p2">
-              <ul>
-                <li class="css">css</li>
-                <li class="rect">html</li>
-                <li class="rect">boostrap</li>
-                <li class="rect">Ruby</li>
-              </ul>
-            </div>
-            <div class="see-project">
-              <p>See Project</p>
-            </div>
-          </div>
-        </article>
         <div class="elipse-6"></div>
-        <article class="second reverse">
-          <div class="div-one"></div>
-          <div class="div-two">
-            <h2>Multi-Post Stories</h2>
-            <p class="stories">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <div class="p2">
-              <ul>
-                <li class="css">css</li>
-                <li class="rect">html</li>
-                <li class="rect">boostrap</li>
-                <li class="rect">Ruby</li>
-              </ul>
-            </div>
-            <div class="see-project">
-              <p>See Project</p>
-            </div>
-          </div>
-        </article>
       </section>
+
+        <!-- PROJECTS FROM JAVASCRIPT -->
+       <div class="projects">
+
+      </div>
+
       <br id="contact" />
       <!-- FOOTER -->
       <footer>
@@ -239,7 +153,7 @@
           method="post"
           id="form"
         >
-          <div class="field success" id="field-name">
+          <div class="field" id="field-name">
             <input
               type="text"
               name="Names"
@@ -265,9 +179,11 @@
               cols="30"
               rows="10"
               placeholder="Enter your text here !!!"
-              maxlength="500"
+              maxlength="401"
             ></textarea>
             <small id="errorMsg"></small>
+          </div>
+          <div class="field" id="field-overal">
             <small id="overralError"></small>
           </div>
           <br />
