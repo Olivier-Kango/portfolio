@@ -33,6 +33,7 @@ header {
   padding: 10px 0;
   width: auto;
   z-index: 2;
+  z-index: 2;
 }
 
 .bar1,
@@ -91,6 +92,18 @@ footer > form > ul {
   left: -120%;
   transition: 0.3s;
   background: #191765;
+  z-index: 1;
+}
+
+.li-desk ul {
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  transition: 0.3s;
   z-index: 1;
 }
 
@@ -173,6 +186,7 @@ footer h2 {
   background: #edecff;
   filter: blur(50px);
   z-index: -1;
+  z-index: -1;
 }
 
 footer p {
@@ -209,6 +223,7 @@ footer p {
   letter-spacing: 0.03em;
   color: #9490ff;
   cursor: pointer;
+  cursor: pointer;
 }
 
 .list {
@@ -219,6 +234,7 @@ footer p {
   list-style: none;
   align-items: center;
   color: #f5f5ff;
+  cursor: pointer;
   cursor: pointer;
 }
 
@@ -231,6 +247,13 @@ footer p {
   color: #f5f5ff;
   text-align: center;
   padding: 15px;
+}
+
+.poop-p2 ul li {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 5px;
+  margin: 0;
 }
 
 .poop-p2 ul li {
@@ -269,6 +292,7 @@ footer p {
   top: 610px;
   background: #edecff;
   filter: blur(50px);
+  z-index: -1;
   z-index: -1;
 }
 
@@ -325,6 +349,18 @@ a:hover {
   width: auto;
 }
 
+.recent-work h1 a {
+  color: #9490ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: auto;
+}
+
 .work,
 .work2 {
   font-style: normal;
@@ -359,6 +395,7 @@ a:hover {
   font-size: 15px;
   color: #f5f5ff;
   background: #7d73fc;
+  border: none;
   border: none;
   padding: 12px;
   margin: 40px 0;
@@ -454,6 +491,7 @@ a:hover {
   background: #edecff;
   filter: blur(35px);
   transform: rotate(-36.38deg);
+  z-index: -1;
   z-index: -1;
 }
 
@@ -705,6 +743,79 @@ h2:hover,
 .modal-header .title:hover,
 .modal-header .close-button:hover {
   color: #0d99ff;
+}
+
+/* VALIDATION FORM */
+
+footer > form > div {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+#message,
+#name,
+#email {
+  border: none;
+  width: inherit;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.error input,
+.error textarea {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0.176),
+      rgba(255, 0, 0, 0.046)
+    );
+}
+
+.success input,
+.success textarea {
+  border: 2px solid blue;
+  background: white;
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 255, 0.176),
+      rgba(0, 0, 255, 0.046)
+    );
+  font-size: 14px;
+  width: inherit;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.error small {
+  color: red;
+  background: white;
+  font-size: 14px;
+  width: inherit;
+  margin-top: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 5px;
+}
+
+#overralError {
+  margin-top: 30px;
+  border-radius: 4px;
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* FOR DESKTOP */

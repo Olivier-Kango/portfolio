@@ -146,46 +146,52 @@
           with it
         </p>
         <br />
-        <form action="https://formspree.io/f/xrgdbpve" method="post">
-          <ul>
-            <li>
-              <input
-                type="text"
-                name="Names"
-                id="text-input"
-                placeholder="Olivier Kango"
-                required
-                maxlength="30"
-              />
-            </li>
-            <li>
-              <input
-                type="email"
-                name="E-mail"
-                id="email"
-                placeholder="olivierkango@gmail.com"
-                required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              />
-            </li>
-            <li>
-              <textarea
-                name="Post"
-                id="text-area"
-                cols="30"
-                rows="10"
-                placeholder="Enter your text here !!!"
-                required
-                maxlength="500"
-              ></textarea>
-            </li>
-            <li>
-              <br />
-              <button type="submit" class="see-project" id="see-footer">
-                Get in touch
-              </button>
-            </li>
-          </ul>
+        <!-- CONTACT FORM -->
+        <form
+          novalidate
+          action="https://formspree.io/f/xrgdbpve"
+          method="post"
+          id="form"
+        >
+          <div class="field" id="field-name">
+            <input
+              type="text"
+              name="Names"
+              id="name"
+              placeholder="Olivier Kango"
+              maxlength="30"
+            />
+            <small id="errorName"></small>
+          </div>
+          <div class="field" id="field-email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="olivierkango@gmail.com"
+            />
+            <small id="errorEmail"></small>
+          </div>
+          <div class="field" id="field-text">
+            <textarea
+              name="Post"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your text here !!!"
+              maxlength="401"
+            ></textarea>
+            <small id="errorMsg"></small>
+          </div>
+          <div class="field" id="field-overal">
+            <small id="overralError"></small>
+          </div>
+          <br />
+          <div class="field">
+            <button type="submit" class="see-project" id="see-footer">
+              Get in touch
+            </button>
+          </div>
         </form>
         <br />
         <br />
@@ -230,5 +236,6 @@
     
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>
