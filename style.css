@@ -33,7 +33,6 @@ header {
   padding: 10px 0;
   width: auto;
   z-index: 2;
-  z-index: 2;
 }
 
 .bar1,
@@ -92,18 +91,6 @@ footer > form > ul {
   left: -120%;
   transition: 0.3s;
   background: #191765;
-  z-index: 1;
-}
-
-.li-desk ul {
-  display: flex;
-  gap: 45px;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  z-index: 1;
-  transition: 0.3s;
   z-index: 1;
 }
 
@@ -186,7 +173,6 @@ footer h2 {
   background: #edecff;
   filter: blur(50px);
   z-index: -1;
-  z-index: -1;
 }
 
 footer p {
@@ -223,7 +209,6 @@ footer p {
   letter-spacing: 0.03em;
   color: #9490ff;
   cursor: pointer;
-  cursor: pointer;
 }
 
 .list {
@@ -234,7 +219,6 @@ footer p {
   list-style: none;
   align-items: center;
   color: #f5f5ff;
-  cursor: pointer;
   cursor: pointer;
 }
 
@@ -247,13 +231,6 @@ footer p {
   color: #f5f5ff;
   text-align: center;
   padding: 15px;
-}
-
-.poop-p2 ul li {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  padding: 5px;
-  margin: 0;
 }
 
 .poop-p2 ul li {
@@ -292,7 +269,6 @@ footer p {
   top: 610px;
   background: #edecff;
   filter: blur(50px);
-  z-index: -1;
   z-index: -1;
 }
 
@@ -349,18 +325,6 @@ a:hover {
   width: auto;
 }
 
-.recent-work h1 a {
-  color: #9490ff;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: left;
-  text-transform: uppercase;
-  cursor: pointer;
-  width: auto;
-}
-
 .work,
 .work2 {
   font-style: normal;
@@ -395,7 +359,6 @@ a:hover {
   font-size: 15px;
   color: #f5f5ff;
   background: #7d73fc;
-  border: none;
   border: none;
   padding: 12px;
   margin: 40px 0;
@@ -491,7 +454,6 @@ a:hover {
   background: #edecff;
   filter: blur(35px);
   transform: rotate(-36.38deg);
-  z-index: -1;
   z-index: -1;
 }
 
