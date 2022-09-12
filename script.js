@@ -2,17 +2,18 @@
 const hamburger = document.querySelector('.container_menu');
 const navMenu = document.querySelector('.li-desk');
 
-hamburger.addEventListener('click', () => {
+const bars = () => {
   hamburger.classList.toggle('change');
   navMenu.classList.toggle('change');
-});
+};
 
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+hamburger.addEventListener('click', bars);
+document.querySelectorAll('.nav-link').forEach((element) => element.addEventListener('click', () => {
   hamburger.classList.remove('change');
   navMenu.classList.remove('change');
 }));
 
-//  PROJECTS IN JS
+//  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
     name: 'Multi-Post Stories',
