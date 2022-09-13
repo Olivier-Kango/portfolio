@@ -8,6 +8,7 @@ const bars = () => {
 };
 
 hamburger.addEventListener('click', bars);
+
 document.querySelectorAll('.nav-link').forEach((element) => element.addEventListener('click', () => {
   hamburger.classList.remove('change');
   navMenu.classList.remove('change');
