@@ -240,7 +240,4 @@ listProjects.forEach((project, index) => {
       closeModal(modal);
     });
   });
-
 });
-
-
