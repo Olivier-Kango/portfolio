@@ -53,4 +53,23 @@ message.addEventListener('input', () => {
   }
 });
 
-
+form.addEventListener('submit', (event) => {
+  if (
+    fname.value.length > 3
+    && fname.value.length < 30
+    && message.value.length > 10
+    && message.value.length < 400
+    && emailRegex.test(email.value)
+    && email.value === email.value.toLowerCase()
+  ) {
+    form.submit();
+  } else if (fname.value === '' || email.value === '' || message.value === '') {
+    overralError.textContent = 'Please fill in entire form before submitting.';
+    document.getElementById('field-overal').setAttribute('class', 'error');
+    event.preventDefault();
+  } else {
+    overralError.textContent = '';
+    overralError.style.display = 'none';
+    event.preventDefault();
+  }
+});
