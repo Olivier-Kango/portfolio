@@ -17,12 +17,12 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
-    name: 'Multi-Post Stories',
+    name: 'Multi-Post Storie',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     skills: ['css', 'html', 'bootstrap', 'Ruby'],
     feature: 'See Project',
     listPopupProjects: {
-      popName: 'Multi - Post stories',
+      popName: 'Multi - Post Olivier',
       popButton: '&times;',
       popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
       popSkills: ['html', 'css', 'Ruby', 'Github'],
