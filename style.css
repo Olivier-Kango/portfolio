@@ -422,7 +422,6 @@ a:hover {
   overflow: hidden;
   background: white;
   margin: 55px 0 20px 0;
-  background-image: url("./assets/images/work-img-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -622,7 +621,6 @@ textarea:valid {
   overflow: hidden;
   background: white;
   margin: 0 8% 4% 8%;
-  background-image: url("./assets/images/Snapshoot\ Portfolio.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -635,7 +633,6 @@ textarea:valid {
 
 .snapshoot:hover {
   background: rgba(0, 0, 0, 0.592);
-  background-image: url("./assets/images/Snapshoot\ Portfolio.png");
 }
 
 .modal-body {

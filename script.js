@@ -17,17 +17,21 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
-    name: 'Multi-Post Storie',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    skills: ['css', 'html', 'bootstrap', 'Ruby'],
+    name: 'Kango Bible Study',
+    description: 'This platform was created with the purpose of uniting people from all over the world, regardless of location, gender or origin, to study and share the word of God for spiritual growth with the aim of inheriting the Kingdom of Heaven.',
+    skills: ['html', 'css', 'javascript', 'boostrap'],
     feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-1.png')",
     listPopupProjects: {
-      popName: 'Multi - Post Olivier',
+      popName: 'Kango Bible Study',
       popButton: '&times;',
-      popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
-      popSkills: ['html', 'css', 'Ruby', 'Github'],
+      popDescription: 'Believing in the value of sharing and creating positive change with people from 80 countries around the world, we share the Word of God',
+      popSkills: ['html', 'css', 'javascript', 'github'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio.png')",
+      webSite: "window.location.href='https://capstone-one.netlify.app/';",
+      gitHub: "window.location.href='https://github.com/Olivier-Kango/My-first-capstone-project';",
     },
   },
   {
@@ -35,41 +39,15 @@ const listProjects = [
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     skills: ['css', 'html', 'bootstrap', 'Ruby'],
     feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-2.png')",
     listPopupProjects: {
-      popName: 'Multiiiiiiiiiii',
+      popName: 'Multi-Post Stories',
       popButton: '&times;',
       popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
       popSkills: ['html', 'css', 'Ruby', 'Github'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-    },
-  },
-  {
-    name: 'Multi-Post Olivier Kango - 3',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    skills: ['css', 'html', 'bootstrap', 'Ruby'],
-    feature: 'See Project',
-    listPopupProjects: {
-      popName: 'Multi-Post Olivier Kango - 3',
-      popButton: '&times;',
-      popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
-      popSkills: ['html', 'css', 'Ruby', 'Github'],
-      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
-      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-    },
-  },
-  {
-    name: 'Multi-Post from Derrick -4',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    skills: ['css', 'html', 'bootstrap', 'Ruby'],
-    feature: 'See Project',
-    listPopupProjects: {
-      popName: 'Multi-Post Essai form Derrick',
-      popButton: '&times;',
-      popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
-      popSkills: ['html', 'css', 'Ruby', 'Github'],
-      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
-      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-2.png')",
     },
   },
 ];
@@ -91,13 +69,13 @@ listProjects.forEach((project, index) => {
   const projects = document.querySelector('.projects');
   projects.appendChild(article);
 
-  const { name } = project;
-  const { description } = project;
-  const { skills } = project;
-  const { feature } = project;
+  const {
+    name, description, skills, feature, bgDivOne,
+  } = project;
 
   const divOne = document.createElement('div');
   divOne.setAttribute('class', 'div-one');
+  divOne.style.backgroundImage = bgDivOne;
   article.appendChild(divOne);
 
   const divTwo = document.createElement('div');
@@ -132,12 +110,9 @@ listProjects.forEach((project, index) => {
 
   const listPopupProject = project.listPopupProjects;
 
-  const { popName } = listPopupProject;
-  const { popButton } = listPopupProject;
-  const { popDescription } = listPopupProject;
-  const { popSkills } = listPopupProject;
-  const { featureOne } = listPopupProject;
-  const { featureTwo } = listPopupProject;
+  const {
+    popName, popButton, popDescription, popSkills, featureOne, featureTwo, bgpopup, webSite, gitHub,
+  } = listPopupProject;
 
   const popup = document.createElement('div');
   popup.setAttribute('class', 'div-popup');
@@ -174,6 +149,7 @@ listProjects.forEach((project, index) => {
   const snapshoot = document.createElement('div');
   snapshoot.setAttribute('class', 'snapshoot');
   modal.appendChild(snapshoot);
+  snapshoot.style.backgroundImage = bgpopup;
 
   const modalBody = document.createElement('div');
   modalBody.setAttribute('class', 'modal-body');
@@ -194,11 +170,13 @@ listProjects.forEach((project, index) => {
 
   const buttonFtOne = document.createElement('button');
   buttonFtOne.innerHTML = featureOne;
+  buttonFtOne.setAttribute('onclick', webSite);
   poopProject.appendChild(buttonFtOne);
 
   const buttonFtTwoo = document.createElement('button');
   buttonFtTwoo.innerHTML = featureTwo;
   poopProject.appendChild(buttonFtTwoo);
+  buttonFtTwoo.setAttribute('onclick', gitHub);
 
   const overlayTwo = document.createElement('div');
   overlayTwo.setAttribute('id', 'overlay');
