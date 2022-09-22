@@ -50,6 +50,40 @@ const listProjects = [
       bgpopup: "url('./assets/images/Snapshoot Portfolio-2.png')",
     },
   },
+  {
+    name: 'Kango Bible Study',
+    description: 'This platform was created with the purpose of uniting people from all over the world, regardless of location, gender or origin, to study and share the word of God for spiritual growth with the aim of inheriting the Kingdom of Heaven.',
+    skills: ['html', 'css', 'javascript', 'boostrap'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-1.png')",
+    listPopupProjects: {
+      popName: 'Kango Bible Study',
+      popButton: '&times;',
+      popDescription: 'Believing in the value of sharing and creating positive change with people from 80 countries around the world, we share the Word of God',
+      popSkills: ['html', 'css', 'javascript', 'github'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio.png')",
+      webSite: "window.location.href='https://capstone-one.netlify.app/';",
+      gitHub: "window.location.href='https://github.com/Olivier-Kango/My-first-capstone-project';",
+    },
+  },
+  {
+    name: 'Multi-Post Stories',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    skills: ['css', 'html', 'bootstrap', 'Ruby'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-2.png')",
+    listPopupProjects: {
+      popName: 'Multi-Post Stories',
+      popButton: '&times;',
+      popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
+      popSkills: ['html', 'css', 'Ruby', 'Github'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-2.png')",
+    },
+  },
 ];
 
 const findSkills = (skills) => {
