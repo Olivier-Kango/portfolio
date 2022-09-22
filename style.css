@@ -230,7 +230,7 @@ footer p {
   list-style: none;
   color: #f5f5ff;
   text-align: center;
-  padding: 15px;
+  padding: 0;
 }
 
 .poop-p2 ul li {
@@ -287,7 +287,7 @@ a {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  padding: 55px 0;
+  padding: 30px 0;
   margin: 0;
   color: #fff;
 }
@@ -295,10 +295,12 @@ a {
 .rect {
   border-left: 1px solid #555;
   cursor: pointer;
+  padding: 0;
 }
 
 .css {
   cursor: pointer;
+  padding: 0;
 }
 
 .modal-header .title {
@@ -339,6 +341,7 @@ a:hover {
   align-items: flex-start;
   gap: 2.5rem;
   flex-direction: row;
+  margin: 90px 0;
 }
 
 .second p {
@@ -361,7 +364,7 @@ a:hover {
   background: #7d73fc;
   border: none;
   padding: 12px;
-  margin: 40px 0;
+  margin: 25px 0;
   margin-bottom: 12px;
   cursor: pointer;
   background-image: linear-gradient(#9690fe 0, #6358fd 100%);
@@ -421,7 +424,6 @@ a:hover {
 .div-one {
   overflow: hidden;
   background: white;
-  margin: 55px 0 20px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -433,6 +435,11 @@ a:hover {
 
 .div-two {
   width: 100%;
+}
+
+.stories {
+  margin: 0;
+  padding: 0;
 }
 
 .div-one:hover {
@@ -987,7 +994,7 @@ textarea:focus {
   }
 
   .div-two h2 {
-    padding: 20px 0;
+    padding: 0 0 30px 0;
   }
 
   .stories {
