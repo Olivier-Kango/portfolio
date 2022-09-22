@@ -437,6 +437,10 @@ a:hover {
   width: 100%;
 }
 
+.div-two h2 {
+  padding: 50px 0 30px 0;
+}
+
 .stories {
   margin: 0;
   padding: 0;
