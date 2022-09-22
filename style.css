@@ -230,7 +230,7 @@ footer p {
   list-style: none;
   color: #f5f5ff;
   text-align: center;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .poop-p2 ul li {
@@ -352,7 +352,7 @@ a:hover {
   line-height: 28px;
   text-align: left;
   margin-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .see-project button,
