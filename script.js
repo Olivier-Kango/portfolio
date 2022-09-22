@@ -48,6 +48,8 @@ const listProjects = [
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-2.png')",
+      webSite: "window.location.href='';",
+      gitHub: "window.location.href='';",
     },
   },
   {
@@ -82,6 +84,8 @@ const listProjects = [
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-2.png')",
+      webSite: "window.location.href='';",
+      gitHub: "window.location.href='';",
     },
   },
 ];
