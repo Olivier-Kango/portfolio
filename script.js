@@ -35,6 +35,24 @@ const listProjects = [
     },
   },
   {
+    name: 'To Do List',
+    description: 'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. I build a simple website that allows for doing that, and I did it using ES6 and Webpack!',
+    skills: ['css', 'html', 'Webpack', 'JavaSript'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-4.png')",
+    listPopupProjects: {
+      popName: 'To Do List',
+      popButton: '&times;',
+      popDescription: 'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+      popSkills: ['css', 'html', 'Webpack', 'JavaSript'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-4.png')",
+      webSite: "window.location.href='https://todolist-by-olk.netlify.app/';",
+      gitHub: "window.location.href='https://github.com/Olivier-Kango/To-Do-List';",
+    },
+  },
+  {
     name: 'Multi-Post Stories',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     skills: ['css', 'html', 'bootstrap', 'Ruby'],
@@ -54,7 +72,7 @@ const listProjects = [
   },
   {
     name: 'Media Project',
-    description: "This project was created during my admission test at microverse. It was designed before I learned more about coding. The project is not finished. There is a lot to improve",
+    description: 'This project was created during my admission test at microverse. It was designed before I learned more about coding. The project is not finished. There is a lot to improve',
     skills: ['css', 'html', 'bootstrap', 'javascript'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-3.png')",
