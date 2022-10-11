@@ -70,24 +70,6 @@ const listProjects = [
       gitHub: "window.location.href='';",
     },
   },
-  {
-    name: 'Media Project',
-    description: 'This project was created during my admission test at microverse. It was designed before I learned more about coding. The project is not finished. There is a lot to improve',
-    skills: ['css', 'html', 'bootstrap', 'javascript'],
-    feature: 'See Project',
-    bgDivOne: "url('assets/images/work-img-3.png')",
-    listPopupProjects: {
-      popName: 'Media Project',
-      popButton: '&times;',
-      popDescription: 'This project was created during my admission test at microverse. It was designed before I learned more about coding. The project is not finished. There is a lot to improve',
-      popSkills: ['html', 'css', 'js', 'Github'],
-      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
-      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/Snapshoot Portfolio-3.png')",
-      webSite: "window.location.href='https://olivier-kango.github.io/';",
-      gitHub: "window.location.href='https://github.com/Olivier-Kango/olivier-kango.github.io';",
-    },
-  },
 ];
 
 const findSkills = (skills) => {
