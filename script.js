@@ -70,6 +70,24 @@ const listProjects = [
       gitHub: "window.location.href='';",
     },
   },
+  {
+    name: 'This is me fourth project',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    skills: ['css', 'html', 'bootstrap', 'Ruby'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-2.png')",
+    listPopupProjects: {
+      popName: 'Multi-Post Stories',
+      popButton: '&times;',
+      popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
+      popSkills: ['html', 'css', 'Ruby', 'Github'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-2.png')",
+      webSite: "window.location.href='';",
+      gitHub: "window.location.href='';",
+    },
+  },
 ];
 
 const findSkills = (skills) => {
