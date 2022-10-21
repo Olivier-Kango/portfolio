@@ -61,11 +61,11 @@ const listProjects = [
     listPopupProjects: {
       popName: 'Multi-Post Stories',
       popButton: '&times;',
-      popDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quam accusantium unde eum voluptas beatae, sit sed impedit eaque dolor deserunt eligendi repellendus hic recusandae porro dignissimos, blanditiis suscipit modi!',
+      popDescription: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score.',
       popSkills: ['HTML', 'CSS', 'Webpack', 'API'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/work-img-5.png')",
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-5.png')",
       webSite: "window.location.href='https://loaderboard.netlify.app/';",
       gitHub: "window.location.href='https://github.com/Olivier-Kango/Leaderboard';",
     },
