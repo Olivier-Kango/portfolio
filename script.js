@@ -85,7 +85,7 @@ const listProjects = [
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-6.png')",
       webSite: "window.location.href='https://capstone-api.netlify.app/';",
-      gitHub: "window.location.href='https://github.com/Olivier-Kango/Capstone-API-based-webapp/tree/feature-development';",
+      gitHub: "window.location.href='https://github.com/Olivier-Kango/Capstone-API-based-webapp';",
     },
   },
   {
