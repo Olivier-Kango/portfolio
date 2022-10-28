@@ -72,14 +72,14 @@ const listProjects = [
   },
   {
     name: 'Capstone API Webapp',
-    description: 'The JavaScript capstone project is about building my own web application based on an external API. I selected an API that provides data about Meals and then built the webapp around it.',
+    description: 'The JavaScript capstone project is about building my own web application based on an external API. I selected an API that provides data about Meals and then built the webapp around it. You can add comments or likes',
     skills: ['CSS', 'API', 'Webpack', 'JavaScript'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-6.png')",
     listPopupProjects: {
       popName: 'Capstone API Webapp',
       popButton: '&times;',
-      popDescription: 'The JavaScript capstone project is about building my own web application based on an external API.',
+      popDescription: 'The JavaScript capstone project is about building my own web application based on an external API. You can comment or like',
       popSkills: ['JavaScript', 'CSS', 'Webpack', 'API'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
