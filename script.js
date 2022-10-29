@@ -17,6 +17,24 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
+    name: 'Capstone API Webapp',
+    description: 'The JavaScript capstone project is about building my own web application based on an external API. I selected an API that provides data about Meals and then built the webapp around it. You can add comments or likes',
+    skills: ['CSS', 'API', 'Webpack', 'JavaScript'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-6.png')",
+    listPopupProjects: {
+      popName: 'Capstone API Webapp',
+      popButton: '&times;',
+      popDescription: 'The JavaScript capstone project is about building my own web application based on an external API. You can comment or like',
+      popSkills: ['JavaScript', 'CSS', 'Webpack', 'API'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-6.png')",
+      webSite: "window.location.href='https://capstone-api.netlify.app/';",
+      gitHub: "window.location.href='https://github.com/Olivier-Kango/Capstone-API-based-webapp';",
+    },
+  },
+  {
     name: 'Kango Bible Study',
     description: 'This platform was created with the purpose of uniting people from all over the world, regardless of location, gender or origin, to study and share the word of God for spiritual growth with the aim of inheriting the Kingdom of Heaven.',
     skills: ['HTML', 'CSS', 'JavaScript', 'boostrap'],
@@ -68,24 +86,6 @@ const listProjects = [
       bgpopup: "url('./assets/images/Snapshoot Portfolio-5.png')",
       webSite: "window.location.href='https://loaderboard.netlify.app/';",
       gitHub: "window.location.href='https://github.com/Olivier-Kango/Leaderboard';",
-    },
-  },
-  {
-    name: 'Capstone API Webapp',
-    description: 'The JavaScript capstone project is about building my own web application based on an external API. I selected an API that provides data about Meals and then built the webapp around it. You can add comments or likes',
-    skills: ['CSS', 'API', 'Webpack', 'JavaScript'],
-    feature: 'See Project',
-    bgDivOne: "url('assets/images/work-img-6.png')",
-    listPopupProjects: {
-      popName: 'Capstone API Webapp',
-      popButton: '&times;',
-      popDescription: 'The JavaScript capstone project is about building my own web application based on an external API. You can comment or like',
-      popSkills: ['JavaScript', 'CSS', 'Webpack', 'API'],
-      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
-      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/Snapshoot Portfolio-6.png')",
-      webSite: "window.location.href='https://capstone-api.netlify.app/';",
-      gitHub: "window.location.href='https://github.com/Olivier-Kango/Capstone-API-based-webapp';",
     },
   },
   {
