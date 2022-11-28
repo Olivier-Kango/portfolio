@@ -295,12 +295,10 @@ a {
 
 .rect {
   border-left: 1px solid #555;
-  cursor: pointer;
   padding: 0;
 }
 
 .css {
-  cursor: pointer;
   padding: 0;
 }
 
@@ -704,8 +702,6 @@ h1:hover,
 h2:hover,
 .top:hover,
 #top:hover,
-.css:hover,
-.rect:hover,
 .main-section:hover,
 .title-lang:hover,
 .list:hover,
