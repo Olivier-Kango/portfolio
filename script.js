@@ -124,6 +124,24 @@ const listProjects = [
       gitHub: "window.location.href='https://github.com/Olivier-Kango/bookstore';",
     },
   },
+  {
+    name: "Space Travelers' Hub",
+    description: "In this task, we will be working with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. Space Travelers' Hub is a an application which can allow users to book rockets and join selected space missions.",
+    skills: ['React', 'Redux'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-9.png')",
+    listPopupProjects: {
+      popName: "Space Travelers' Hub",
+      popButton: '&times;',
+      popDescription: "Space Travelers' Hub is a an application which can allow users to book rockets and join selected space missions.",
+      popSkills: ['React', 'Redux'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-9.png')",
+      webSite: "window.location.href='https://spacetravelersod.netlify.app/';",
+      gitHub: "window.location.href='https://github.com/Olivier-Kango/space-travelers-hub';",
+    },
+  },
 ];
 
 const findSkills = (skills) => {
