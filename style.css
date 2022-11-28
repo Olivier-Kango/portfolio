@@ -325,7 +325,6 @@ a:hover {
   line-height: 52px;
   text-align: left;
   text-transform: uppercase;
-  cursor: pointer;
   width: auto;
 }
 
@@ -703,7 +702,6 @@ textarea:valid {
 
 .main-section:hover,
 .list:hover,
-.recent-work h1 a:hover,
 .modal-header .title:hover,
 .modal-header .close-button:hover {
   color: #0d99ff;
