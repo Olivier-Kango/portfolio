@@ -138,8 +138,8 @@ const listProjects = [
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-9.png')",
-      webSite: "window.open('https://spacetravelersod.netlify.app/' '_blank');",
-      gitHub: "window.open('https://github.com/Olivier-Kango/space-travelers-hub' '_blank');",
+      webSite: "window.open('https://spacetravelersod.netlify.app/', '_blank');",
+      gitHub: "window.open('https://github.com/Olivier-Kango/space-travelers-hub', '_blank');",
     },
   },
 ];
