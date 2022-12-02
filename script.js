@@ -21,7 +21,7 @@ const listProjects = [
     description: 'This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.',
     skills: ['SCSS', 'API', 'React', 'Redux'],
     feature: 'See Project',
-    bgDivOne: "url('assets/images/work-img-6.png')",
+    bgDivOne: "url('assets/images/work-img-11.png')",
     listPopupProjects: {
       popName: 'Movies Catalogue',
       popButton: '&times;',
@@ -29,7 +29,7 @@ const listProjects = [
       popSkills: ['SCSS', 'API', 'React', 'Redux'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/Snapshoot Portfolio-6.png')",
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-11.png')",
       webSite: "window.open('https://moviescatalogue-olivier.netlify.app/', '_blank');",
       gitHub: "window.open('https://github.com/Olivier-Kango/movies-catalogue', '_blank');",
     },
