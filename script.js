@@ -17,6 +17,24 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
+    name: 'Movies Catalogue',
+    description: 'This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.',
+    skills: ['SCSS', 'API', 'React', 'Redux'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-6.png')",
+    listPopupProjects: {
+      popName: 'Movies Catalogue',
+      popButton: '&times;',
+      popDescription: 'This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.',
+      popSkills: ['SCSS', 'API', 'React', 'Redux'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-6.png')",
+      webSite: "window.open('https://moviescatalogue-olivier.netlify.app/', '_blank');",
+      gitHub: "window.open('https://github.com/Olivier-Kango/movies-catalogue', '_blank');",
+    },
+  },
+  {
     name: 'Capstone API Webapp',
     description: 'The JavaScript capstone project is about building my own web application based on an external API. I selected an API that provides data about Meals and then built the webapp around it. You can add comments or likes',
     skills: ['CSS', 'API', 'Webpack', 'JavaScript'],
