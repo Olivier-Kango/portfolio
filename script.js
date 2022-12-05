@@ -54,14 +54,14 @@ const listProjects = [
   },
   {
     name: 'Math magicians',
-    description: "'Math magicians' is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations and Read a random math-related quote.",
+    description: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations and Read a random math-related quote.',
     skills: ['React', 'CSS'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-7.png')",
     listPopupProjects: {
       popName: 'Math magicians',
       popButton: '&times;',
-      popDescription: "'Math magicians' is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations",
+      popDescription: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations',
       popSkills: ['React', 'CSS'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
