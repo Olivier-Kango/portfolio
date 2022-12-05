@@ -163,14 +163,14 @@ const listProjects = [
   {
     name: "My porfolio built with Boostrap",
     description: "In this particular project, I make my portfolio using only Boostrap for styling.",
-    skills: ['React', 'Redux'],
+    skills: ['Boostrap', 'HTML'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-10.png')",
     listPopupProjects: {
       popName: "My porfolio built with Boostrap",
       popButton: '&times;',
       popDescription: "In this particular project, I make my portfolio using only Boostrap for styling.",
-      popSkills: ['React', 'Redux'],
+      popSkills: ['Boostrap', 'HTML'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-10.png')",
