@@ -640,11 +640,6 @@ textarea:valid {
   position: relative;
   background-color: white;
   height: 181px;
-  cursor: pointer;
-}
-
-.snapshoot:hover {
-  background: rgba(0, 0, 0, 0.592);
 }
 
 .modal-body {
