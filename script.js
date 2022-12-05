@@ -26,7 +26,7 @@ const listProjects = [
       popName: 'Movies Catalogue',
       popButton: '&times;',
       popDescription: 'This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.',
-      popSkills: ['SCSS', 'API', 'React', 'Redux'],
+      popSkills: ['React', 'Redux'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-11.png')",
