@@ -19,7 +19,7 @@ const listProjects = [
   {
     name: 'Movies Catalogue',
     description: 'This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.',
-    skills: ['SCSS', 'API', 'React', 'Redux'],
+    skills: ['React', 'Redux'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-11.png')",
     listPopupProjects: {
