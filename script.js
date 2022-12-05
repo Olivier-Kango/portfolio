@@ -161,15 +161,15 @@ const listProjects = [
     },
   },
   {
-    name: "My porfolio built with Boostrap",
-    description: "In this particular project, I make my portfolio using only Boostrap for styling.",
+    name: 'My porfolio built with Boostrap',
+    description: 'In this particular project, I make my portfolio using only Boostrap for styling.',
     skills: ['Boostrap', 'HTML'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-10.png')",
     listPopupProjects: {
-      popName: "My porfolio built with Boostrap",
+      popName: 'My porfolio built with Boostrap',
       popButton: '&times;',
-      popDescription: "In this particular project, I make my portfolio using only Boostrap for styling.",
+      popDescription: 'In this particular project, I make my portfolio using only Boostrap for styling.',
       popSkills: ['Boostrap', 'HTML'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
@@ -179,6 +179,9 @@ const listProjects = [
     },
   },
 ];
+
+const titleRecentWork = document.querySelector('#recent-work-a');
+titleRecentWork.innerHTML = `My recent works <span class="span-title-recent-work">(${listProjects.length})</span>`;
 
 const findSkills = (skills) => {
   let list = '';

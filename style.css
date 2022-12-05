@@ -218,13 +218,6 @@ footer p {
   cursor: pointer;
 }
 
-.list a {
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
 .p2 ul li {
   flex: 1;
   width: 104.52px;
@@ -285,6 +278,13 @@ a {
   text-align: center;
   transition: all 0.5s;
   font-size: 30px;
+}
+
+.list a {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .second h2 {
