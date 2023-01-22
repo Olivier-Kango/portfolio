@@ -17,6 +17,24 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
+    name: 'Communauté de la Foi Chrétienne au Monde',
+    description: '"C.F.C.M Website" is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in D.R.C Goma.',
+    skills: ['RoR', 'SQL', 'React', 'Redux', 'Sass'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-13.png')",
+    listPopupProjects: {
+      popName: 'Communauté de la Foi Chrétienne au Monde',
+      popButton: '&times;',
+      popDescription: '"C.F.C.M Website" is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in D.R.C Goma.',
+      popSkills: ['RoR', 'SQL', 'React', 'Redux'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-13.png')",
+      webSite: "window.open('https://cfcm.netlify.app/', '_blank');",
+      gitHub: "window.open('https://github.com/Olivier-Kango/cfcm', '_blank');",
+    },
+  },
+  {
     name: 'Movies Catalogue',
     description: 'This application allows the user to search for their favorite movies classified by popularity with the possibility of filtering them by release year.',
     skills: ['React', 'Redux'],
