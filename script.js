@@ -36,7 +36,7 @@ const listProjects = [
   },
   {
     name: 'Catalog of my things',
-    description: "A console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. The data will be stored in JSON files but you will also prepare a database with tables structure analogical to your program's class structure.",
+    description: "A console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. The data will be stored in JSON files but I also prepared a database with tables structure analogical to my program's class structure.",
     skills: ['Ruby', 'PostgreSQL'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-14.png')",
