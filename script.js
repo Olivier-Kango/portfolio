@@ -17,6 +17,24 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
+    name: 'Budget App',
+    description: 'The Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    skills: ['RoR', 'SQL', 'CSS'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-15.png')",
+    listPopupProjects: {
+      popName: 'Budget App',
+      popButton: '&times;',
+      popDescription: 'The Budget app is about building a mobile web application where you can manage your budget.',
+      popSkills: ['RoR', 'SQL', 'CSS'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-15.png')",
+      webSite: "window.open('https://kango-budget-app.onrender.com/', '_blank');",
+      gitHub: "window.open('https://github.com/Olivier-Kango/rails_budget_app', '_blank');",
+    },
+  },
+  {
     name: 'Communauté de la Foi Chrétienne au Monde',
     description: '"C.F.C.M Website" is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in D.R.C Goma.',
     skills: ['RoR', 'SQL', 'React', 'Redux', 'Sass'],
