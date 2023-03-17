@@ -61,7 +61,7 @@ const listProjects = [
     listPopupProjects: {
       popName: 'Catalog of my things',
       popButton: '&times;',
-      popDescription: "A console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games.",
+      popDescription: 'A console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games.',
       popSkills: ['Ruby', 'PostgreSQL'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
