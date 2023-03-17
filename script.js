@@ -17,6 +17,24 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
+    name: 'Meal Master',
+    description: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
+    skills: ['RoR', 'React.js', 'Redux', 'Postgresql', 'SCSS', 'Boostrap'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-16.png')",
+    listPopupProjects: {
+      popName: 'Budget App',
+      popButton: '&times;',
+      popDescription: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
+      popSkills: ['RoR', 'React.js', 'Redux', 'Postgresql', 'SCSS'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/Snapshoot Portfolio-16.png')",
+      webSite: "window.open('https://master-meal.netlify.app/', '_blank');",
+      gitHub: "window.open('https://github.com/DaveZag/meal-master-backend', '_blank');",
+    },
+  },
+  {
     name: 'Budget App',
     description: 'The Budget app is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     skills: ['RoR', 'SQL', 'CSS'],
