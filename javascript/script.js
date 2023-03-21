@@ -19,7 +19,7 @@ const listProjects = [
   {
     name: 'Meal Master',
     description: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
-    skills: ['RoR', 'React.js', 'Redux', 'Boostrap'],
+    skills: ['RoR', 'React.js', 'Redux', 'Bootstrap'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-16.png')",
     listPopupProjects: {
