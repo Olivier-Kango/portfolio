@@ -19,14 +19,14 @@ const listProjects = [
   {
     name: 'Meal Master',
     description: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
-    skills: ['RoR', 'React.js', 'Redux', 'Postgresql', 'SCSS', 'Boostrap'],
+    skills: ['RoR', 'React.js', 'Redux', 'Boostrap'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-16.png')",
     listPopupProjects: {
       popName: 'Budget App',
       popButton: '&times;',
       popDescription: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
-      popSkills: ['RoR', 'React.js', 'Redux', 'Postgresql', 'SCSS'],
+      popSkills: ['RoR', 'React.js', 'Redux', 'SCSS'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-16.png')",
@@ -73,14 +73,14 @@ const listProjects = [
   {
     name: 'C.F.C.M',
     description: '"C.F.C.M Website" is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in D.R.Congo.',
-    skills: ['RoR', 'React.js', 'Redux', 'Postgresql', 'Bootstrap'],
+    skills: ['RoR', 'React.js', 'Redux', 'Bootstrap'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-13.png')",
     listPopupProjects: {
       popName: 'Communauté de la Foi Chrétienne au Monde',
       popButton: '&times;',
       popDescription: '"C.F.C.M Website" is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in D.R.Congo.',
-      popSkills: ['RoR', 'React.js', 'Redux', 'Postgresql', 'SCSS'],
+      popSkills: ['RoR', 'React.js', 'Redux', 'SCSS'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-13.png')",
@@ -116,6 +116,7 @@ listProjects.forEach((project, index) => {
 
   const divOne = document.createElement('div');
   divOne.setAttribute('class', 'div-one');
+  divOne.setAttribute('data-modal-target', `#modal-${index}`);
   divOne.style.backgroundImage = bgDivOne;
   article.appendChild(divOne);
 
@@ -125,15 +126,19 @@ listProjects.forEach((project, index) => {
 
   const h2 = document.createElement('h2');
   h2.textContent = name;
+  h2.setAttribute('data-aos', 'fade-up');
   divTwo.appendChild(h2);
 
   const p = document.createElement('p');
   p.setAttribute('class', 'stories');
   p.textContent = description;
+  p.setAttribute('data-aos', 'fade-up');
   divTwo.appendChild(p);
 
   const div2 = document.createElement('div');
   div2.setAttribute('class', 'p2');
+  const fade = index % 2 === 0 ? 'fade-left' : 'fade-right';
+  div2.setAttribute('data-aos', fade);
   divTwo.appendChild(div2);
 
   const ul = document.createElement('ul');
@@ -142,6 +147,7 @@ listProjects.forEach((project, index) => {
 
   const features = document.createElement('div');
   features.setAttribute('class', 'see-project');
+  features.setAttribute('data-aos', 'fade-up');
   divTwo.appendChild(features);
 
   const button = document.createElement('button');
@@ -261,7 +267,7 @@ listProjects.forEach((project, index) => {
   });
 });
 
-// LINK COLOR ----------------------------------------------------------------------
+// INIMATION ----------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
   function updateActiveLink() {
     const links = document.querySelectorAll('.nav-item a');
@@ -284,4 +290,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add an event listener to call the function on scroll
   window.addEventListener('scroll', updateActiveLink);
+});
+
+// Get the scroll top button element
+const scrollTopButton = document.getElementById('scroll-top');
+
+// Add an event listener to the window scroll event
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 500) {
+    scrollTopButton.style.display = 'block';
+    scrollTopButton.classList.remove('hide');
+  } else {
+    scrollTopButton.classList.add('hide');
+    scrollTopButton.addEventListener('transitionend', () => {
+      if (scrollTopButton.classList.contains('hide')) {
+        scrollTopButton.style.display = 'none';
+      }
+    }, { once: true });
+  }
+});
+
+scrollTopButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 });

@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <title>Portfolio</title>
   </head>
@@ -127,11 +128,11 @@
               </li>
             </ul>
           </nav>
-          <a href="#recent-work" class="work">
+          <a href="#recent-work" class="work" data-aos="fade-down">
             <p class="arrow-down">&darr;</p>
             <p>Work</p>
           </a>
-          <a href="#recent-work" class="work2">
+          <a href="#recent-work" class="work2" data-aos="fade-down">
             <p class="arrow-down">&darr;</p>
             <p>Work</p>
           </a>
@@ -250,6 +251,7 @@
         </div>
         <p id="bottom">olivierkango@gmail.com</p>
       </footer>
+      <a aria-label="Scroll to the top of the page" href="#" id="scroll-top" class="scroll-top-right"><i class="fa fa-arrow-circle-up" aria-hidden="true" role="img"></i></a>
     </div>
     
     <!-- JavaScript -->
@@ -257,6 +259,7 @@
     <script src="javascript/validation.js"></script>
     <script src="javascript/storage.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       const typed = new Typed(".auto-type", {
         strings: ["I am a Full-stack", "Software Developer", "(RoR | React.js)"],
@@ -264,6 +267,7 @@
         backSpeed: 100,
         loop: true
       });
+      AOS.init();
     </script>
   </body>
 </html>

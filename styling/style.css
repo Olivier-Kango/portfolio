@@ -363,6 +363,11 @@ a:hover {
   padding-bottom: 20px;
 }
 
+.see-project {
+  transition-duration: 0.5s !important;
+  transition-timing-function: ease-out !important;
+}
+
 .see-project button,
 #resume-button,
 #see-footer {
@@ -391,6 +396,29 @@ a:hover {
 
 #resume-button {
   margin-top: 1rem;
+}
+
+.scroll-top-right {
+  position: fixed;
+  padding: 0;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  z-index: 999;
+  opacity: 1;
+  display: inline-block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-top-right i {
+  margin: 0;
+  font-weight: 100;
+}
+
+.scroll-top-right.hide {
+  opacity: 0;
 }
 
 .social-icone {
@@ -446,6 +474,7 @@ a:hover {
   position: relative;
   width: 100%;
   padding-top: 70%;
+  cursor: pointer;
 }
 
 .div-two {
@@ -454,11 +483,15 @@ a:hover {
 
 .div-two h2 {
   padding: 50px 0 30px 0;
+  transition-duration: 0.5s !important;
+  transition-timing-function: ease-out !important;
 }
 
 .stories {
   margin: 0;
   padding: 0;
+  transition-duration: 0.5s !important;
+  transition-timing-function: ease-out !important;
 }
 
 .div-one:hover {
@@ -469,6 +502,8 @@ a:hover {
   display: flex;
   align-content: space-between;
   padding: 0;
+  transition-duration: 0.5s !important;
+  transition-timing-function: ease-out !important;
 }
 
 .elipse-3 {
@@ -721,6 +756,11 @@ textarea:valid {
   color: #0d99ff;
 }
 
+.scroll-top-right:hover {
+  background: unset;
+  color: #0d99ff;
+}
+
 /* VALIDATION FORM */
 input:focus,
 textarea:focus {
@@ -946,6 +986,8 @@ textarea:focus {
     align-items: center;
     padding: 0;
     margin: 0;
+    transition-duration: 0.5s !important;
+    transition-timing-function: ease-out !important;
   }
 
   .work {
