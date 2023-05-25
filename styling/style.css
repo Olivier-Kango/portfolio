@@ -625,11 +625,11 @@ textarea:valid {
   z-index: -1;
 }
 
-.fa-hand-peace-o {
+/* .fa-hand-peace-o {
   animation-duration: 3s;
   animation-name: rotation;
   animation-iteration-count: infinite;
-}
+} */
 
 .delete {
   color: #191765;
