@@ -73,14 +73,14 @@ const listProjects = [
   {
     name: 'Majestic Earth',
     description: 'Majestic Earth is an application that celebrates the majesty and grandeur of our planet. Immerse yourself in the most breathtaking natural landscapes, from majestic mountains to vast oceans, lush forests, and celestial panoramas.',
-    skills: ['Ruby on Rails', 'Bootstrap'],
+    skills: ['jQuery', 'CSS'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-18.jpg')",
     listPopupProjects: {
       popName: 'Budget App',
       popButton: '&times;',
       popDescription: 'Majestic Earth is an application that celebrates the majesty and grandeur of our planet. Immerse yourself in the most breathtaking natural landscapes, from majestic mountains to vast oceans, lush forests, and celestial panoramas.',
-      popSkills: ['Ruby on Rails', 'Bootstrap'],
+      popSkills: ['jQuery', 'CSS'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/work-img-18.jpg')",
