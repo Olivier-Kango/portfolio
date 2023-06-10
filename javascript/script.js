@@ -17,21 +17,21 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
-    name: 'Meal Master',
-    description: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
+    name: 'PSS Digital',
+    description: 'PSS Digital is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
     skills: ['RoR', 'React.js', 'Redux', 'Bootstrap'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-16.png')",
     listPopupProjects: {
-      popName: 'Budget App',
+      popName: 'PSS Digital',
       popButton: '&times;',
-      popDescription: 'Meal Master App is a web application for ordering food with user authentication and admin access. Users can select foods by theme, place orders, view their order history, and add or delete items (for admins only).',
+      popDescription: 'PSS Digital is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
       popSkills: ['RoR', 'React.js', 'Redux', 'SCSS'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
       bgpopup: "url('./assets/images/Snapshoot Portfolio-16.png')",
-      webSite: "window.open('https://master-meal.netlify.app/', '_blank');",
-      gitHub: "window.open('https://github.com/DaveZag/meal-master-backend', '_blank');",
+      webSite: "window.open('https://pss-digital.netlify.app/', '_blank');",
+      gitHub: "window.open('https://github.com/Olivier-Kango/pss-digital-backend', '_blank');",
     },
   },
   {
