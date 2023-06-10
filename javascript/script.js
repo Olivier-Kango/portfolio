@@ -71,7 +71,7 @@ const listProjects = [
     },
   },
   {
-    name: 'Budget App',
+    name: 'Majestic Earth',
     description: 'The Budget app is about building a mobile web application where you can manage your budget: you have a list of expenses associated with a categorie, so that you can see how much money you spent and on what.',
     skills: ['Ruby on Rails', 'Bootstrap'],
     feature: 'See Project',
@@ -83,7 +83,7 @@ const listProjects = [
       popSkills: ['Ruby on Rails', 'Bootstrap'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/Snapshoot Portfolio-18.png')",
+      bgpopup: "url('./assets/images/work-img-18.png')",
       webSite: "window.open('https://budget-app-04jo.onrender.com/', '_blank');",
       gitHub: "window.open('https://github.com/Olivier-Kango/budget_app', '_blank');",
     },
