@@ -19,7 +19,7 @@ const listProjects = [
   {
     name: 'PSS Digital',
     description: 'PSS Digital is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
-    skills: ['RoR', 'React.js', 'Redux', 'Bootstrap'],
+    skills: ['RoR', 'React.js', 'Redux', 'Tailwind'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-16.png')",
     listPopupProjects: {
