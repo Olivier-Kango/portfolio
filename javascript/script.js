@@ -54,7 +54,7 @@ const listProjects = [
   },
   {
     name: 'Eglise C.F.C.M',
-    description: "In this task, we will be working with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. Space Travelers' Hub is a an application which can allow users to book rockets and join selected space missions.",
+    description: "The 'C.F.C.M Website' is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in the D.R.C Goma.",
     skills: ['React', 'Redux'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-9.png')",
