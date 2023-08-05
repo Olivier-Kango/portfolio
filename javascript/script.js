@@ -57,7 +57,7 @@ const listProjects = [
     description: "The 'C.F.C.M Website' is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in the D.R.C Goma.",
     skills: ['React', 'Redux'],
     feature: 'See Project',
-    bgDivOne: "url('assets/images/work-img-9.png')",
+    bgDivOne: "url('assets/images/work-img-13.png')",
     listPopupProjects: {
       popName: "Space Travelers' Hub",
       popButton: '&times;',
