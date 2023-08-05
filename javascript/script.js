@@ -61,7 +61,7 @@ const listProjects = [
     listPopupProjects: {
       popName: 'C.F.C.M Church',
       popButton: '&times;',
-      popDescription: "Space Travelers' Hub is a an application which can allow users to book rockets and join selected space missions.",
+      popDescription: "The 'C.F.C.M Website' is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in the D.R.C Goma.",
       popSkills: ['React', 'Redux'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
