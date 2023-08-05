@@ -59,7 +59,7 @@ const listProjects = [
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-13.png')",
     listPopupProjects: {
-      popName: "Space Travelers' Hub",
+      popName: 'C.F.C.M Church',
       popButton: '&times;',
       popDescription: "Space Travelers' Hub is a an application which can allow users to book rockets and join selected space missions.",
       popSkills: ['React', 'Redux'],
