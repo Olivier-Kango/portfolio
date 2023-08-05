@@ -53,7 +53,7 @@ const listProjects = [
     },
   },
   {
-    name: 'Eglise C.F.C.M',
+    name: 'C.F.C.M Church',
     description: "The 'C.F.C.M Website' is a website for the Revival Church C.F.C.M (Communauté de la Foi Chrétienne dans le Monde) located in the city of Goma in the D.R.C Goma.",
     skills: ['React', 'Redux'],
     feature: 'See Project',
