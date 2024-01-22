@@ -17,21 +17,21 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
-    name: 'PSS Digital',
-    description: 'PSS Digital is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
+    name: 'Sion',
+    description: 'Sion is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
     skills: ['RoR', 'React.js', 'Redux', 'Tailwind'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-16.png')",
     listPopupProjects: {
-      popName: 'PSS Digital',
+      popName: 'Sion',
       popButton: '&times;',
-      popDescription: 'PSS Digital is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
+      popDescription: 'Sion is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
       popSkills: ['RoR', 'React.js', 'Redux', 'SCSS'],
       featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
       featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/Snapshoot Portfolio-16.png')",
-      webSite: "window.open('https://pss-digital.vercel.app/', '_blank');",
-      gitHub: "window.open('https://github.com/Olivier-Kango/pss-digital-backend', '_blank');",
+      bgpopup: "url('./assets/images/work-img-16.png')",
+      webSite: "window.open('https://sion-digital.vercel.app/', '_blank');",
+      gitHub: "window.open('https://github.com/Olivier-Kango/sion-backend', '_blank');",
     },
   },
   {
