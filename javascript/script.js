@@ -17,6 +17,24 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 //  ------------------------------------------------------PROJECTS IN JS
 const listProjects = [
   {
+    name: 'Tiki Wiki CMS Groupware',
+    description: 'Tiki Wiki CMS Groupware is a comprehensive web application for group collaboration and communication as well as data input, management and presentation that has been continuously developed for 22 years. When unsure which branch to use see https://dev.tiki.org/Where-To-Commit',
+    skills: ['PHP', 'jQuery', 'MySQL', 'Smarty'],
+    feature: 'See Project',
+    bgDivOne: "url('assets/images/work-img-18.gif')",
+    listPopupProjects: {
+      popName: 'Tiki Wiki CMS Groupware',
+      popButton: '&times;',
+      popDescription: 'Tiki Wiki CMS Groupware is a comprehensive web application for group collaboration and communication as well as data input, management and presentation that has been continuously developed for 22 years.',
+      popSkills: ['PHP', 'jQuery', 'MySQL', 'Smarty'],
+      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
+      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
+      bgpopup: "url('./assets/images/work-img-18.gif')",
+      webSite: "window.open('https://tiki.org/HomePage', '_blank');",
+      gitHub: "window.open('https://gitlab.com/tikiwiki/tiki', '_blank');",
+    },
+  },
+  {
     name: 'Sion',
     description: 'Sion is an application for digital solutions in e-commerce and business management. It facilitates online shopping, maximizing sales, and helps achieve success through digital means.',
     skills: ['RoR', 'React.js', 'Redux', 'Tailwind'],
@@ -68,24 +86,6 @@ const listProjects = [
       bgpopup: "url('./assets/images/Snapshoot Portfolio-13.png')",
       webSite: "window.open('https://cfcm.netlify.app/', '_blank');",
       gitHub: "window.open('https://github.com/Olivier-Kango/cfcm', '_blank');",
-    },
-  },
-  {
-    name: 'Majestic Earth',
-    description: 'Majestic Earth is an application that celebrates the majesty and grandeur of our planet. Immerse yourself in the most breathtaking natural landscapes, from majestic mountains to vast oceans, lush forests, and celestial panoramas.',
-    skills: ['jQuery', 'CSS'],
-    feature: 'See Project',
-    bgDivOne: "url('assets/images/work-img-18.jpg')",
-    listPopupProjects: {
-      popName: 'Budget App',
-      popButton: '&times;',
-      popDescription: 'Majestic Earth is an application that celebrates the majesty and grandeur of our planet. Immerse yourself in the most breathtaking natural landscapes, from majestic mountains to vast oceans, lush forests, and celestial panoramas.',
-      popSkills: ['jQuery', 'CSS'],
-      featureOne: 'See Live &nbsp; <i class="fa fa-arrow-circle-right"></i>',
-      featureTwo: 'See Source &nbsp; <i class="fa fa-github"></i>',
-      bgpopup: "url('./assets/images/work-img-18.jpg')",
-      webSite: "window.open('https://majestic-earth.netlify.app/', '_blank');",
-      gitHub: "window.open('https://github.com/Olivier-Kango/majestic_earth', '_blank');",
     },
   },
 ];
