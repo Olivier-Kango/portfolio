@@ -18,7 +18,7 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
 const listProjects = [
   {
     name: 'Tiki Wiki CMS Groupware',
-    description: 'Tiki Wiki CMS Groupware is a comprehensive web application for group collaboration and communication as well as data input, management and presentation that has been continuously developed for 22 years. When unsure which branch to use see https://dev.tiki.org/Where-To-Commit',
+    description: 'Tiki Wiki CMS Groupware is a comprehensive web application for group collaboration and communication as well as data input, management and presentation that has been continuously developed for 22 years. Welcome to anyone who is interested to join us.',
     skills: ['PHP', 'jQuery', 'MySQL', 'Smarty'],
     feature: 'See Project',
     bgDivOne: "url('assets/images/work-img-18.gif')",
